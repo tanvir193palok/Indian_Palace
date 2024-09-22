@@ -14,20 +14,18 @@ module.exports = {
     },
     container: {
       center: true,
-      padding: "1rem",
+      padding: "2rem",
     },
     fontFamily: {
       title: ["Lato", "sans-serif"],
       secondary: ["Dancing Script", "cursive"],
       primary: ["Open Sans", "serif"],
     },
-    extend: {
-      colors: {
-        heading: "rgb(114, 168, 98)",
-        text: "rgb(79, 97, 79)",
-        button: "rgb(79, 97, 79)",
-        nav: "rgb(114, 168, 98)",
-      },
+    colors: {
+      heading: "rgb(114, 168, 98)",
+      text: "rgb(79, 97, 79)",
+      white: "rgb(255, 255, 255)",
+      nav: "rgb(114, 168, 98)",
     },
   },
   plugins: [],
