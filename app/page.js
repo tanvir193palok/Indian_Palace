@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Banner from "@/components/home/Banner";
 import BestSelling from "@/components/home/BestSelling";
 import NewArrival from "@/components/home/NewArrival";
@@ -28,6 +29,7 @@ export default function Home() {
         <BestSelling />
         <NewArrival />
       </div>
+      <Footer />
     </div>
   );
 }
