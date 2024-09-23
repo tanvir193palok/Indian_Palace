@@ -17,15 +17,17 @@ module.exports = {
       padding: "2rem",
     },
     fontFamily: {
-      title: ["Lato", "sans-serif"],
-      secondary: ["Dancing Script", "cursive"],
+      lato: ["Lato", "sans-serif"],
+      secondary: ["Playfair Display"],
       primary: ["Open Sans", "serif"],
     },
-    colors: {
-      heading: "rgb(114, 168, 98)",
-      text: "rgb(79, 97, 79)",
-      white: "rgb(255, 255, 255)",
-      nav: "rgb(114, 168, 98)",
+    extend: {
+      colors: {
+        heading: "rgb(114, 168, 98)",
+        text: "rgb(79, 97, 79)",
+        white: "rgb(255, 255, 255)",
+        nav: "rgb(114, 168, 98)",
+      },
     },
   },
   plugins: [],

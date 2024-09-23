@@ -1,5 +1,4 @@
 import Image from "next/image";
-import BestSelling from "./BestSelling";
 import Link from "next/link";
 
 const NewArrival = () => {
@@ -37,7 +36,7 @@ const NewArrival = () => {
               >
                 {/* image */}
                 <div className="flex-1 max-h-96 lg:max-h-max order-2 lg:order-none overflow-hidden -ml-10">
-                  <Image src="/food1.jpg" alt="" width={500} height={500} />
+                  <Image src="/food1.jpg" alt="" width={500} height={400} />
                 </div>
 
                 {/* text */}
@@ -61,8 +60,8 @@ const NewArrival = () => {
                   </p>
                   <Link
                     href="#"
-                    className="bg-heading border border-primary text-white px-6 py-2 font-sm 
-                        rounded-md hover:bg-transparent hover:text-primary mt-4"
+                    className="bg-heading border border-primary text-white px-8 py-4 font-medium 
+                    rounded-md hover:bg-transparent hover:text-black hover:border-heading mt-4"
                   >
                     Order Now
                   </Link>
