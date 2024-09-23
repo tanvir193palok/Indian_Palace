@@ -2,7 +2,7 @@ const Header = () => {
   return (
     <header className="py-4 shadow-sm bg-white">
       <div className="container flex items-center justify-between">
-        <div className="w-full text-nav relative flex justify-center font-secondary italic font-extrabold text-center text-4xl tracking-[15px]">
+        <div className="w-full text-nav relative flex justify-center font-primary font-extrabold text-center text-7xl tracking-[15px]">
           Indian Palace
         </div>
         <div className="flex font-primary items-center space-x-4 pr-6">

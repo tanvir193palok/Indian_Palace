@@ -4,7 +4,7 @@ import Link from "next/link";
 const Dropdown = () => {
   return (
     <div
-      className="absolute left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0
+      className="absolute font-primary font-semibold left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0
    group-hover:opacity-100 transition duration-300 invisible group-hover:visible w-[600px]"
     >
       <Link

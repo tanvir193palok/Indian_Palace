@@ -35,7 +35,7 @@ const Menu = () => {
                     <div className="flex flex-row lg:flex-col h-full">
                       {/* Image Container */}
                       <div
-                        className={`w-full h-[250px] lg:h-[300px] md:w-auto ${
+                        className={`w-full h-[250px] lg:h-[295px] md:w-auto ${
                           idx === 1 || idx === 3 ? "lg:order-1" : ""
                         }`}
                       >
@@ -46,6 +46,7 @@ const Menu = () => {
                           width={500}
                           height={500}
                           objectFit="cover"
+                          className="h-[300px]"
                         />
                       </div>
 
@@ -73,7 +74,7 @@ const Menu = () => {
           <div className="flex justify-center">
             <button
               className="bg-heading border border-primary text-white px-8 py-4 font-medium 
-          rounded-md hover:bg-transparent hover:text-black hover:border-heading"
+          rounded-md hover:bg-transparent hover:text-black hover:border-text"
             >
               {btnText}
             </button>
