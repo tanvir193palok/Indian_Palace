@@ -18,7 +18,7 @@ const Dropdown = () => {
           alt="sofa"
           className="w-5 h-5 object-contain"
         />
-        <span className="ml-6 text-gray-600">Home Furniture</span>
+        <span className="ml-6 text-gray-600">Starters</span>
       </Link>
       <Link
         href="/shop?category=Gym Accessories"
@@ -31,7 +31,7 @@ const Dropdown = () => {
           alt="terrace"
           className="w-5 h-5 object-contain"
         />
-        <span className="ml-6 text-gray-600">Gym Accessories</span>
+        <span className="ml-6 text-gray-600">SUPPLEMENTS</span>
       </Link>
       <Link
         href="/shop?category=Office Furniture"
@@ -44,7 +44,7 @@ const Dropdown = () => {
           alt="bed"
           className="w-5 h-5 object-contain"
         />
-        <span className="ml-6 text-gray-600">Office Furniture</span>
+        <span className="ml-6 text-gray-600">INDIAN BREAD</span>
       </Link>
       <Link
         href="/shop?category=Music Accessories"
@@ -57,7 +57,7 @@ const Dropdown = () => {
           alt="Outdoor"
           className="w-5 h-5 object-contain"
         />
-        <span className="ml-6 text-gray-600">Music Accessories</span>
+        <span className="ml-6 text-gray-600">VEGETARIAN & VEGAN</span>
       </Link>
       <Link
         href="/shop?category=Laptop Accessories"
@@ -70,7 +70,7 @@ const Dropdown = () => {
           alt="outdoor"
           className="w-5 h-5 object-contain"
         />
-        <span className="ml-6 text-gray-600">Laptop Accessories</span>
+        <span className="ml-6 text-gray-600">BIRYANIS</span>
       </Link>
       <Link
         href="/shop?category=Fashion"
@@ -83,7 +83,111 @@ const Dropdown = () => {
           alt="Mattress"
           className="w-5 h-5 object-contain"
         />
-        <span className="ml-6 text-gray-600">Fashion</span>
+        <span className="ml-6 text-gray-600">TANDOORI SPECIALTIES</span>
+      </Link>
+      <Link
+        href="/shop?category=Fashion"
+        className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+      >
+        <Image
+          src="/assets/images/icons/bed-2.svg"
+          width={40}
+          height={40}
+          alt="Mattress"
+          className="w-5 h-5 object-contain"
+        />
+        <span className="ml-6 text-gray-600">CHICKEN</span>
+      </Link>
+      <Link
+        href="/shop?category=Fashion"
+        className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+      >
+        <Image
+          src="/assets/images/icons/bed-2.svg"
+          width={40}
+          height={40}
+          alt="Mattress"
+          className="w-5 h-5 object-contain"
+        />
+        <span className="ml-6 text-gray-600">LAMB</span>
+      </Link>
+      <Link
+        href="/shop?category=Fashion"
+        className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+      >
+        <Image
+          src="/assets/images/icons/bed-2.svg"
+          width={40}
+          height={40}
+          alt="Mattress"
+          className="w-5 h-5 object-contain"
+        />
+        <span className="ml-6 text-gray-600">Chili specialties</span>
+      </Link>
+      <Link
+        href="/shop?category=Fashion"
+        className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+      >
+        <Image
+          src="/assets/images/icons/bed-2.svg"
+          width={40}
+          height={40}
+          alt="Mattress"
+          className="w-5 h-5 object-contain"
+        />
+        <span className="ml-6 text-gray-600">FISH & PRAWNS</span>
+      </Link>
+      <Link
+        href="/shop?category=Fashion"
+        className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+      >
+        <Image
+          src="/assets/images/icons/bed-2.svg"
+          width={40}
+          height={40}
+          alt="Mattress"
+          className="w-5 h-5 object-contain"
+        />
+        <span className="ml-6 text-gray-600">DUCK</span>
+      </Link>
+      <Link
+        href="/shop?category=Fashion"
+        className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+      >
+        <Image
+          src="/assets/images/icons/bed-2.svg"
+          width={40}
+          height={40}
+          alt="Mattress"
+          className="w-5 h-5 object-contain"
+        />
+        <span className="ml-6 text-gray-600">INDIAN PALACE SPECIALTIES</span>
+      </Link>
+      <Link
+        href="/shop?category=Fashion"
+        className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+      >
+        <Image
+          src="/assets/images/icons/bed-2.svg"
+          width={40}
+          height={40}
+          alt="Mattress"
+          className="w-5 h-5 object-contain"
+        />
+        <span className="ml-6 text-gray-600">DESSERT</span>
+      </Link>
+      <Link
+        href="/shop?category=Fashion"
+        className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+      >
+        <Image
+          src="/assets/images/icons/bed-2.svg"
+          width={40}
+          height={40}
+          alt="Mattress"
+          className="w-5 h-5 object-contain"
+        />
+        <span className="ml-6 text-gray-600">Drinks</span>
       </Link>
     </div>
   );
