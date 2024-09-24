@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import Banner from "@/components/home/Banner";
 import BestSelling from "@/components/home/BestSelling";
 import Menu from "@/components/home/Menu";
@@ -31,7 +30,6 @@ export default function Home() {
       <BestSelling />
       <Menu />
       <NewArrival />
-      <Footer />
     </div>
   );
 }

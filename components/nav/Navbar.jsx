@@ -1,56 +1,55 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Dropdown from "./Dropdown";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="bg-text font-title">
-      <div className="c flex">
+    <nav className="bg-text">
+      <div className="flex">
         <div className="px-8 py-4 bg-primary md:flex items-center cursor-pointer relative group">
           <span className="text-white">
             <FontAwesomeIcon icon={faBars} />
           </span>
-          <span className="capitalize font-primary font-semibold ml-6 text-white">All Categories</span>
+          <span className="font-primary font-semibold text-md ml-6 text-white uppercase tracking-wide">
+            All Categories
+          </span>
 
-          {/* Dropdown */}
           <Dropdown />
         </div>
 
         <div className="flex justify-center md:justify-start md:pl-32 flex-grow py-5">
-          <div className="flex items-center font-primary font-semibold space-x-10 capitalize">
-            <a
-              href="index.html"
-              className="hover:text-white transition"
-            >
+          <div className="flex items-center font-primary font-medium text-md space-x-10 uppercase tracking-wide">
+            <Link href="/" className="hover:text-white transition">
               Home
-            </a>
-            <a
-              href="pages/shop.html"
+            </Link>
+            <Link
+              href="/menu"
               className="hover:text-white transition"
             >
               Menu
-            </a>
-            <a
-              href="pages/shop.html"
+            </Link>
+            <Link
+              href="/desert"
               className="hover:text-white transition"
             >
-              Discount
-            </a>
-            <a
-              href="pages/shop.html"
+              Desert
+            </Link>
+            <Link
+              href="/new-arrival"
               className="hover:text-white transition"
             >
               New Arrival
-            </a>
-            <a href="#" className="hover:text-white transition">
+            </Link>
+            <Link href="/discount" className="hover:text-white transition">
               Discount
-            </a>
-            <a href="#" className="hover:text-white transition">
+            </Link>
+            <Link href="/location" className="hover:text-white transition">
               Location
-            </a>
-            <a href="#" className="hover:text-white transition">
+            </Link>
+            <Link href="/about" className="hover:text-white transition">
               About us
-            </a>
+            </Link>
           </div>
         </div>
       </div>

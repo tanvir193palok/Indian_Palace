@@ -37,8 +37,8 @@ const BestSelling = () => {
             </p>
             <Link
               href="#"
-              className="bg-text border border-primary text-white px-8 py-4 font-secondary font-medium 
-              rounded-md tracking-wide hover:bg-transparent hover:text-black hover:border-text"
+              className="bg-text border border-text text-white px-8 py-4 font-primary font-medium 
+              rounded-md tracking-wide hover:bg-transparent hover:text-text hover:border-nav uppercase"
             >
               Order Now
             </Link>

@@ -73,8 +73,8 @@ const Menu = () => {
           </div>
           <div className="flex justify-center">
             <button
-              className="bg-heading border border-primary text-white px-8 py-4 font-medium 
-          rounded-md hover:bg-transparent hover:text-black hover:border-text"
+              className="bg-text border border-text text-white px-8 py-4 font-primary font-medium 
+              rounded-md tracking-wide hover:bg-transparent hover:text-text hover:border-nav uppercase"
             >
               {btnText}
             </button>

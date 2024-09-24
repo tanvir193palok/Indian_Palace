@@ -4,7 +4,7 @@ import Socials from "./Socials";
 const Footer = () => {
   return (
     <footer
-      className="relative top-96 z-20 bg-dark lg:bg-transparent lg:min-h-[320px]
+      className="relative top-28 z-20 bg-dark lg:bg-transparent lg:min-h-[320px]
    lg:bg-[url('/footer.png')] lg:bg-center lg:bg-cover lg:bg-no-repeat pt-20 lg:pt-48"
     >
       <div className="container mx-auto px-32">

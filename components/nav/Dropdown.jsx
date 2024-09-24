@@ -4,8 +4,8 @@ import Link from "next/link";
 const Dropdown = () => {
   return (
     <div
-      className="absolute font-primary font-semibold left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0
-   group-hover:opacity-100 transition duration-300 invisible group-hover:visible w-[600px]"
+      className="absolute font-primary font-medium text-md left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0
+   group-hover:opacity-100 transition duration-300 invisible group-hover:visible w-[600px] uppercase"
     >
       <Link
         href="/shop?category=Home Furniture"
@@ -18,7 +18,7 @@ const Dropdown = () => {
           alt="sofa"
           className="w-5 h-5 object-contain"
         />
-        <span className="ml-6 text-gray-600 text-sm">Home Furniture</span>
+        <span className="ml-6 text-gray-600">Home Furniture</span>
       </Link>
       <Link
         href="/shop?category=Gym Accessories"
@@ -31,7 +31,7 @@ const Dropdown = () => {
           alt="terrace"
           className="w-5 h-5 object-contain"
         />
-        <span className="ml-6 text-gray-600 text-sm">Gym Accessories</span>
+        <span className="ml-6 text-gray-600">Gym Accessories</span>
       </Link>
       <Link
         href="/shop?category=Office Furniture"
@@ -44,7 +44,7 @@ const Dropdown = () => {
           alt="bed"
           className="w-5 h-5 object-contain"
         />
-        <span className="ml-6 text-gray-600 text-sm">Office Furniture</span>
+        <span className="ml-6 text-gray-600">Office Furniture</span>
       </Link>
       <Link
         href="/shop?category=Music Accessories"
@@ -57,7 +57,7 @@ const Dropdown = () => {
           alt="Outdoor"
           className="w-5 h-5 object-contain"
         />
-        <span className="ml-6 text-gray-600 text-sm">Music Accessories</span>
+        <span className="ml-6 text-gray-600">Music Accessories</span>
       </Link>
       <Link
         href="/shop?category=Laptop Accessories"
@@ -70,7 +70,7 @@ const Dropdown = () => {
           alt="outdoor"
           className="w-5 h-5 object-contain"
         />
-        <span className="ml-6 text-gray-600 text-sm">Laptop Accessories</span>
+        <span className="ml-6 text-gray-600">Laptop Accessories</span>
       </Link>
       <Link
         href="/shop?category=Fashion"
@@ -83,7 +83,7 @@ const Dropdown = () => {
           alt="Mattress"
           className="w-5 h-5 object-contain"
         />
-        <span className="ml-6 text-gray-600 text-sm">Fashion</span>
+        <span className="ml-6 text-gray-600">Fashion</span>
       </Link>
     </div>
   );

@@ -40,8 +40,8 @@ export const menuData = {
 
 
 export const socialData = [
-  { href: "/", icon: faFacebookF, color: "#3b5998" },
-  { href: "/", icon: faInstagram, color: "#e4405f" },
+  { href: "https://www.facebook.com/indianpalacePB/", icon: faFacebookF, color: "#3b5998" },
+  { href: "https://www.instagram.com/indianpalace.pb/", icon: faInstagram, color: "#e4405f" },
   { href: "/", icon: faTwitter, color: "#1DA1F2" },
   { href: "/", icon: faWhatsapp, color: "#25D366" },
 ];

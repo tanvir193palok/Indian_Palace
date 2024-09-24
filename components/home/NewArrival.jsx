@@ -10,10 +10,10 @@ const NewArrival = () => {
       <div className="container mx-auto h-full relative pt-2">
         <div
           className="flex flex-col lg:flex-row h-full
-   items-center justify-center gap-x-10 text-center lg:text-left"
+   items-center justify-center  text-center lg:text-left"
         >
-          <div className="flex-1 max-h-96 lg:max-h-max order-2 lg:order-none overflow-hidden pt-6">
-            <Image src="/food1.jpg" alt="" width={500} height={800} />
+          <div className="flex-1 max-h-96 lg:max-h-max order-2 lg:order-none overflow-hidden pt-2">
+            <Image src="/food1.jpg" alt="" width={550} height={700} />
           </div>
 
           <div
@@ -25,7 +25,7 @@ const NewArrival = () => {
                 <Image
                   src="/banner/banner3.jpg"
                   alt=""
-                  width={500}
+                  width={800}
                   height={500}
                 />
               </div>
@@ -35,13 +35,13 @@ const NewArrival = () => {
            items-center justify-center gap-x-5 text-center lg:text-left"
               >
                 {/* image */}
-                <div className="flex-1 max-h-96 lg:max-h-max order-2 lg:order-none overflow-hidden -ml-10">
-                  <Image src="/food1.jpg" alt="" width={500} height={400} />
+                <div className="flex-1 max-h-96 lg:max-h-max order-2 lg:order-none overflow-hidden">
+                  <Image src="/food1.jpg" alt="" width={500} height={500} />
                 </div>
 
                 {/* text */}
                 <div
-                  className="flex-1 pt-36 pb-14 lg:pt-2 lg:w-auto z-10 flex flex-col
+                  className="flex-1 pt-36 pb-14 lg:pt-6 lg:w-auto z-10 flex flex-col
              justify-center items-center lg:items-start"
                 >
                   <h1 className="text-heading font-secondary font-bold tracking-widest text-lg uppercase pb-2">
@@ -60,8 +60,8 @@ const NewArrival = () => {
                   </p>
                   <Link
                     href="#"
-                    className="bg-text mt-6 border border-primary text-white px-8 py-4 font-secondary font-medium 
-                    rounded-md tracking-wide hover:bg-transparent hover:text-black hover:border-text"
+                    className="bg-text border border-text text-white px-8 py-4 font-primary font-medium 
+                    rounded-md tracking-wide hover:bg-transparent hover:text-text hover:border-nav uppercase mt-6"
                   >
                     Order Now
                   </Link>
