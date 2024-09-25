@@ -4,7 +4,7 @@ import { menuData } from "@/data";
 const Menu = () => {
   const { title, description, menuItems, btnText } = menuData;
   return (
-    <section className="min-h-[780px] my-20">
+    <section className="min-h-[780px] pt-28">
       {/* background */}
       <div
         className="h-[780px] bg-[url('/menu/bg.png')] 

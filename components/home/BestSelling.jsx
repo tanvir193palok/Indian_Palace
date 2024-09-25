@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const BestSelling = () => {
   return (
-    <div className="px-32 py-10 font-lato">
+    <div className="px-32 pt-28 font-lato">
       <p className="flex justify-center uppercase tracking-widest font-secondary italic text-5xl text-heading font-extrabold pb-10 border-b-2 border-heading">
         Best Selling
       </p>

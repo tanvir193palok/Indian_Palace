@@ -2,11 +2,8 @@ import Image from "next/image";
 
 const Intro = () => {
   return (
-    <div className="px-32 pb-10">
-      <p className="flex justify-center uppercase tracking-widest font-secondary italic text-5xl text-text font-extrabold">
-        Greetings
-      </p>
-      <div className="mx-auto h-full relative pt-10">
+    <div className="px-32">
+      <div className="mx-auto h-full relative">
         <div
           className="flex flex-col lg:flex-row h-full
    items-center justify-center  text-center lg:text-left"

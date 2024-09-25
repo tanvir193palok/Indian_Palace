@@ -4,7 +4,7 @@ import Timing from "@/components/about/Timing";
 
 const AboutPage = () => {
   return (
-    <div className="py-20">
+    <div className="py-10">
       <Intro />
       <AddressInfo />
       <Timing />

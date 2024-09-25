@@ -8,7 +8,7 @@ export default function Home() {
     <div className="">
       <Banner />
       <div className="container">
-        <div className="px-32 py-16">
+        <div className="px-32 pt-28">
           <p className="flex justify-center items-center text-[36px] font-primary font-semibold italic">
             We are Germany’s favourite local Italian, inviting you to come
             together
