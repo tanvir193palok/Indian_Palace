@@ -1,11 +1,12 @@
+import Image from "next/image"
 
 
-const page = () => {
+const MenuPage = () => {
   return (
-    <div>
-      Menu Page
+    <div className="container">
+      
     </div>
   )
 }
 
-export default page
+export default MenuPage

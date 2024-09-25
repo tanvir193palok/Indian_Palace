@@ -1,11 +1,15 @@
+import AddressInfo from "@/components/about/AddressInfo";
+import Intro from "@/components/about/Intro";
+import Timing from "@/components/about/Timing";
 
-
-const page = () => {
+const AboutPage = () => {
   return (
-    <div>
-      About page
+    <div className="py-20">
+      <Intro />
+      <AddressInfo />
+      <Timing />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default AboutPage;
