@@ -18,3 +18,11 @@
     @apply block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded placeholder-gray-400 focus:border-nav focus:ring-0;
   }
 }
+
+.hiddenScrollbar {
+  scrollbar-width: none; /* Firefox */
+}
+
+.hiddenScrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}

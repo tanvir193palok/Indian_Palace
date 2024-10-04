@@ -13,7 +13,7 @@ const CheckoutForm = () => {
   }
 
   return (
-    <div className="col-span-8 border border-gray-200 p-4 rounded">
+    <div className="col-span-5 border border-gray-200 p-4 rounded">
       <h3 className="text-lg font-medium font-secondary uppercase mb-4">Checkout</h3>
       <div className="space-y-4">
         {error && <p className="text-red-500">{error}</p>}

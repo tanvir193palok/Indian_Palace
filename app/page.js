@@ -5,7 +5,7 @@ import NewArrival from "@/components/home/NewArrival";
 
 export default function Home() {
   return (
-    <div className="">
+    <>
       <Banner />
       <div className="container">
         <div className="px-32 pt-28">
@@ -30,6 +30,6 @@ export default function Home() {
       <BestSelling />
       <Menu />
       <NewArrival />
-    </div>
+    </>
   );
 }
