@@ -44,10 +44,10 @@ const NewArrival = () => {
                   className="flex-1 pt-36 pb-14 lg:pt-6 lg:w-auto z-10 flex flex-col
              justify-center items-center lg:items-start"
                 >
-                  <h1 className="text-heading font-secondary font-bold tracking-widest text-lg uppercase pb-2">
+                  <h1 className="text-heading font-primary font-bold tracking-widest text-lg uppercase pb-2">
                     Murg Briyani
                   </h1>
-                  <p className="mb-2 max-w-md text-sm">
+                  <p className="mb-2 max-w-md text-sm font-lato">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Senectus
                     <b> scelerisque viverra</b> at id aenean scelerisque. Nec

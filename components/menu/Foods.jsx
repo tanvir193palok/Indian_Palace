@@ -7,6 +7,15 @@ import FoodModal from "./FoodModal";
 const FoodCategory = () => {
   const [showModal, setShowModal] = useState(false);
   const [modalInfo, setModalInfo] = useState(null);
+
+  const foodData = {
+    name: "Murg Briyani",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus scelerisque viverra at id aenean scelerisque.",
+    price: "6,50 €",
+    imageSrc: "/menu/food3.jpg",
+  };
+
   return (
     <div className="col-span-9 pb-20">
       <div className="flex flex-col justify-center items-center mb-8">
@@ -17,10 +26,26 @@ const FoodCategory = () => {
       </div>
 
       <div className="grid md:grid-cols-2 grid-cols-1 gap-3">
-        <FoodCard updateModal={setShowModal} updateModalInfo={setModalInfo} />
-        <FoodCard updateModal={setShowModal} updateModalInfo={setModalInfo} />
-        <FoodCard updateModal={setShowModal} updateModalInfo={setModalInfo} />
-        <FoodCard updateModal={setShowModal} updateModalInfo={setModalInfo} />
+        <FoodCard
+          foodData={foodData}
+          updateModal={setShowModal}
+          updateModalInfo={setModalInfo}
+        />
+        <FoodCard
+          foodData={foodData}
+          updateModal={setShowModal}
+          updateModalInfo={setModalInfo}
+        />
+        <FoodCard
+          foodData={foodData}
+          updateModal={setShowModal}
+          updateModalInfo={setModalInfo}
+        />
+        <FoodCard
+          foodData={foodData}
+          updateModal={setShowModal}
+          updateModalInfo={setModalInfo}
+        />
 
         {showModal && (
           <div className="hidden md:flex fixed top-0 left-0 w-full h-full items-center justify-center z-50 bg-black bg-opacity-70">
