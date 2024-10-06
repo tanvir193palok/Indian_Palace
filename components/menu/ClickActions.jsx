@@ -33,7 +33,7 @@ const ClickActions = () => {
           type="number"
           value={quantity}
           readOnly
-          className="w-12 text-center py-2 outline-none border-l border-r border-gray-300"
+          className="w-12 pl-2 text-center py-2 outline-none border-l border-r border-gray-300"
         />
         <button
           onClick={() => handleQuantityChange("increment")}
