@@ -4,7 +4,7 @@ import Link from "next/link";
 const NewArrival = () => {
   return (
     <div className="px-32 pt-28">
-      <p className="flex justify-center uppercase tracking-widest font-secondary italic text-5xl text-heading font-extrabold pb-10 border-b-2 border-heading">
+      <p className="flex justify-center uppercase tracking-widest font-secondary italic text-5xl text-nav font-extrabold pb-10 border-b-2 border-nav">
         New Arrival
       </p>
       <div className="container mx-auto h-full relative pt-2">
@@ -44,10 +44,10 @@ const NewArrival = () => {
                   className="flex-1 pt-36 pb-14 lg:pt-6 lg:w-auto z-10 flex flex-col
              justify-center items-center lg:items-start"
                 >
-                  <h1 className="text-heading font-primary font-bold tracking-widest text-lg uppercase pb-2">
+                  <h1 className="text-nav font-primary font-bold tracking-widest text-lg uppercase pb-2">
                     Murg Briyani
                   </h1>
-                  <p className="mb-2 max-w-md text-sm font-lato">
+                  <p className="mb-2 max-w-md text-sm font-lato text-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Senectus
                     <b> scelerisque viverra</b> at id aenean scelerisque. Nec

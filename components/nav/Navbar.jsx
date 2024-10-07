@@ -1,70 +1,124 @@
 "use client";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Dropdown from "./Dropdown";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useRef, useEffect, useState } from "react";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
+
+const categories = [
+  "Starters",
+  "Supplements",
+  "Indian Bread",
+  "Vegetarian & Vegan",
+  "Biryanis",
+  "Tandoori Specialties",
+  "Chicken",
+  "Lamb",
+  "Chili Specialties",
+  "Fish & Prawns",
+  "Duck",
+  "Indian Palace Specialties",
+  "Dessert",
+  "Drinks",
+];
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const scrollRef = useRef(null);
+  const [showLeftButton, setShowLeftButton] = useState(false);
+  const [showRightButton, setShowRightButton] = useState(true);
+  const visibleCount = 5;
 
+  const handleNext = () => {
+    if (scrollRef.current) {
+      const scrollAmount = (scrollRef.current.clientWidth / visibleCount) * 3;
+      scrollRef.current.scrollBy({
+        left: scrollAmount,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const handlePrevious = () => {
+    if (scrollRef.current) {
+      const scrollAmount = (scrollRef.current.clientWidth / visibleCount) * 3;
+      scrollRef.current.scrollBy({
+        left: -scrollAmount,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  // Update button visibility based on scroll position
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100);
+    const updateButtonVisibility = () => {
+      if (scrollRef.current) {
+        const atStart = scrollRef.current.scrollLeft === 0;
+        const atEnd =
+          scrollRef.current.scrollWidth - scrollRef.current.scrollLeft <=
+          scrollRef.current.clientWidth;
+
+        setShowLeftButton(!atStart);
+        setShowRightButton(!atEnd);
+      }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    // Add event listener for scroll
+    const scrollContainer = scrollRef.current;
+    if (scrollContainer) {
+      scrollContainer.addEventListener("scroll", updateButtonVisibility);
+      updateButtonVisibility();
+    }
 
+    // Clean up the event listener on unmount
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      if (scrollContainer) {
+        scrollContainer.removeEventListener("scroll", updateButtonVisibility);
+      }
     };
   }, []);
 
   return (
-    <nav
-      className={`sticky top-0 z-50 transition duration-300 ${
-        isScrolled ? "bg-text backdrop-blur-md bg-opacity-50" : "bg-text"
-      }`}
-    >
-      <div className="flex">
-        {/* Category Dropdown */}
-        <div className="px-8 py-4 bg-primary md:flex items-center cursor-pointer relative group">
-          <span className="text-white">
-            <FontAwesomeIcon icon={faBars} />
-          </span>
-          <span className="font-primary font-semibold text-md ml-6 text-white uppercase tracking-wide">
-            All Categories
-          </span>
-          <Dropdown />
-        </div>
+    <nav className="w-full border-b-2 relative">
+      <div className="flex justify-center items-center">
+        {showLeftButton && (
+          <button
+            onClick={handlePrevious}
+            className="px-3 rounded-full bg-white border-2 py-2 hover:border-heading"
+          >
+            <FontAwesomeIcon icon={faChevronLeft} className="text-xl" />
+          </button>
+        )}
 
-        {/* Navigation Links */}
-        <div className="flex justify-center md:justify-start md:pl-32 flex-grow py-5">
-          <div className="flex items-center font-primary font-medium text-md space-x-10 uppercase tracking-wide">
-            <Link href="/" className="hover:text-white transition">
-              Home
-            </Link>
-            <Link href="/menu" className="hover:text-white transition">
-              Menu
-            </Link>
-            <Link href="/desert" className="hover:text-white transition">
-              Desert
-            </Link>
-            <Link href="/new-arrival" className="hover:text-white transition">
-              New Arrival
-            </Link>
-            <Link href="/discount" className="hover:text-white transition">
-              Discount
-            </Link>
-            <Link href="/location" className="hover:text-white transition">
-              Location
-            </Link>
-            <Link href="/about" className="hover:text-white transition">
-              About us
-            </Link>
+        <div
+          ref={scrollRef}
+          className="flex w-[800px] overflow-hidden scrollbar-hide pb-2"
+        >
+          <div className="flex space-x-6">
+            {categories.map((category) => (
+              <Link
+                href={`/shop?category=${encodeURIComponent(category)}`}
+                key={category}
+                className="relative px-3 py-3 whitespace-nowrap font-primary font-semibold text-md uppercase text-text transition rounded-md hover:bg-gray-200"
+              >
+                <span className="transition py-2 border-b-2 border-transparent hover:border-black">
+                  {category}
+                </span>
+              </Link>
+            ))}
           </div>
         </div>
+
+        {showRightButton && (
+          <button
+            onClick={handleNext}
+            className="px-3 rounded-full bg-white border-2 py-2 hover:border-heading"
+          >
+            <FontAwesomeIcon icon={faChevronRight} className="text-xl" />
+          </button>
+        )}
       </div>
     </nav>
   );

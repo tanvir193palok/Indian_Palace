@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="py-4 shadow-sm bg-white">
+    <header className="py-4  bg-white">
       <div className="container flex items-center justify-between">
         <div className="w-full text-nav relative flex justify-center font-primary font-extrabold text-center text-7xl tracking-[15px]">
           Indian Palace

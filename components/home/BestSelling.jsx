@@ -4,10 +4,10 @@ import Link from "next/link";
 const BestSelling = () => {
   return (
     <div className="px-32 pt-28 font-lato">
-      <p className="flex justify-center uppercase tracking-widest font-secondary italic text-5xl text-heading font-extrabold pb-10 border-b-2 border-heading">
+      <p className="flex justify-center uppercase tracking-widest font-secondary italic text-5xl text-nav font-extrabold pb-10 border-b-2 border-nav">
         Best Selling
       </p>
-      <div className="container mx-auto h-full relative pt-2">
+      <div className="container mx-auto h-full relative pt-4">
         {/* text & img wrapper */}
         <div
           className="flex flex-col lg:flex-row h-full
@@ -15,7 +15,7 @@ const BestSelling = () => {
         >
           {/* image */}
           <div className="flex-1 max-h-96 lg:max-h-max order-2 lg:order-none overflow-hidden">
-            <Image src="/banner/banner2.jpg" alt="" width={500} height={500} />
+            <Image src="/banner/banner2.jpg" alt="" width={600} height={500} />
           </div>
 
           {/* text */}
@@ -23,10 +23,10 @@ const BestSelling = () => {
             className="flex-1 pt-36 pb-14 lg:pt-2 lg:w-auto z-10 flex flex-col
          justify-center items-center lg:items-start"
           >
-            <h1 className="text-heading font-primary font-bold tracking-widest text-xl uppercase pb-2">
+            <h1 className="text-nav font-primary font-bold tracking-widest text-xl uppercase pb-2">
               Murg Briyani
             </h1>
-            <p className="font-lato mb-12 max-w-lg">
+            <p className="font-lato mb-12 max-w-lg text-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus
               <b> scelerisque viverra</b> at id aenean scelerisque. Nec eget
               condimentum eitam leo
