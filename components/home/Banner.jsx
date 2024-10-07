@@ -23,7 +23,7 @@ const Banner = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextBanner();
-    }, 20000); 
+    }, 10000); 
   
     return () => clearInterval(interval); 
   }, [currentBanner]);
@@ -31,9 +31,9 @@ const Banner = () => {
   const { image, title, description } = bannersData[currentBanner];
 
   return (
-    <div className="flex relative px-28 bg-gray-200">
+    <div className="flex relative">
       {/* Left Text Section */}
-      <div className="flex flex-col justify-center bg-white w-[40%] p-12 relative z-10">
+      <div className="flex flex-col justify-center bg-gray-50 w-[40%] p-12 pl-20 relative z-10">
         <h1
           className="text-3xl font-secondary tracking-widest mb-6 uppercase"
           style={{ wordSpacing: "4px" }}
@@ -57,21 +57,21 @@ const Banner = () => {
         style={{ backgroundImage: `url(${image})` }}
       >
         {/* Overlay for the background image */}
-        <div className="absolute inset-0 bg-black/20"></div>
+
       </div>
 
-      <div className="absolute top-1/2 left-4 z-30 transform -translate-y-1/2">
+      <div className="absolute top-1/2 left-2 z-30 transform -translate-y-1/2  hover:border-2 hover:border-heading px-2">
         <FontAwesomeIcon
           icon={faCaretLeft}
-          className="text-heading text-4xl cursor-pointer"
+          className="text-heading text-4xl cursor-pointer hover:text-nav"
           onClick={prevBanner}
         />
       </div>
 
-      <div className="absolute top-1/2 right-4 z-30 transform -translate-y-1/2">
+      <div className="absolute top-1/2 right-2 z-30 transform -translate-y-1/2 hover:border-2 hover:border-heading px-2">
         <FontAwesomeIcon
           icon={faCaretRight}
-          className="text-heading text-4xl cursor-pointer"
+          className="text-heading text-4xl cursor-pointer hover:text-nav"
           onClick={nextBanner}
         />
       </div>
