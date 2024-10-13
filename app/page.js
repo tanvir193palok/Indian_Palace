@@ -2,10 +2,12 @@ import Banner from "@/components/home/Banner";
 import BestSelling from "@/components/home/BestSelling";
 import Menu from "@/components/home/Menu";
 import NewArrival from "@/components/home/NewArrival";
+import Overlay from "@/components/Overlay";
 
 export default function Home() {
   return (
-    <>
+    <div className="relative">
+      <Overlay />
       <Banner />
       <div className="container">
         <div className="px-32 pt-28">
@@ -30,6 +32,6 @@ export default function Home() {
       <BestSelling />
       <Menu />
       <NewArrival />
-    </>
+    </div>
   );
 }

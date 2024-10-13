@@ -1,193 +1,54 @@
-import Image from "next/image";
+"use client";
+
+import { useDropdownMenu } from "@/app/hooks/useDropdownMenu";
 import Link from "next/link";
 
 const Dropdown = () => {
+  const { setDropdownMenu } = useDropdownMenu();
   return (
     <div
-      className="absolute font-primary font-medium text-md left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0
-   group-hover:opacity-100 transition duration-300 invisible group-hover:visible w-[600px] uppercase"
+      className="absolute font-primary font-medium text-md left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-100
+   transition duration-300 visible w-[400px] uppercase"
+      style={{ top: "100%" }}
     >
       <Link
+        href="/"
+        onClick={(prev) => setDropdownMenu(!prev)}
+        className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+      >
+        <span className="ml-6 text-text">Home</span>
+      </Link>
+
+      <Link
+        href="/menu"
+        onClick={(prev) => setDropdownMenu(!prev)}
+        className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+      >
+        <span className="ml-6 text-text">menu</span>
+      </Link>
+
+      <Link
+        href="/menu"
+        onClick={(prev) => setDropdownMenu(!prev)}
+        className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+      >
+        <span className="ml-6 text-gray-600">New Arrival</span>
+      </Link>
+
+      <Link
         href="/shop?category=Home Furniture"
+        onClick={(prev) => setDropdownMenu(!prev)}
         className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
       >
-        <Image
-          src="/assets/images/icons/sofa.svg"
-          width={40}
-          height={40}
-          alt="sofa"
-          className="w-5 h-5 object-contain"
-        />
-        <span className="ml-6 text-gray-600">Starters</span>
+        <span className="ml-6 text-gray-600">Discover Discount</span>
       </Link>
+
       <Link
-        href="/shop?category=Gym Accessories"
+        href="/about"
+        onClick={(prev) => setDropdownMenu(!prev)}
         className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
       >
-        <Image
-          src="/assets/images/icons/terrace.svg"
-          width={40}
-          height={40}
-          alt="terrace"
-          className="w-5 h-5 object-contain"
-        />
-        <span className="ml-6 text-gray-600">SUPPLEMENTS</span>
-      </Link>
-      <Link
-        href="/shop?category=Office Furniture"
-        className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
-      >
-        <Image
-          src="/assets/images/icons/bed.svg"
-          width={40}
-          height={40}
-          alt="bed"
-          className="w-5 h-5 object-contain"
-        />
-        <span className="ml-6 text-gray-600">INDIAN BREAD</span>
-      </Link>
-      <Link
-        href="/shop?category=Music Accessories"
-        className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
-      >
-        <Image
-          src="/assets/images/icons/office.svg"
-          width={40}
-          height={40}
-          alt="Outdoor"
-          className="w-5 h-5 object-contain"
-        />
-        <span className="ml-6 text-gray-600">VEGETARIAN & VEGAN</span>
-      </Link>
-      <Link
-        href="/shop?category=Laptop Accessories"
-        className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
-      >
-        <Image
-          src="/assets/images/icons/outdoor-cafe.svg"
-          width={40}
-          height={40}
-          alt="outdoor"
-          className="w-5 h-5 object-contain"
-        />
-        <span className="ml-6 text-gray-600">BIRYANIS</span>
-      </Link>
-      <Link
-        href="/shop?category=Fashion"
-        className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
-      >
-        <Image
-          src="/assets/images/icons/bed-2.svg"
-          width={40}
-          height={40}
-          alt="Mattress"
-          className="w-5 h-5 object-contain"
-        />
-        <span className="ml-6 text-gray-600">TANDOORI SPECIALTIES</span>
-      </Link>
-      <Link
-        href="/shop?category=Fashion"
-        className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
-      >
-        <Image
-          src="/assets/images/icons/bed-2.svg"
-          width={40}
-          height={40}
-          alt="Mattress"
-          className="w-5 h-5 object-contain"
-        />
-        <span className="ml-6 text-gray-600">CHICKEN</span>
-      </Link>
-      <Link
-        href="/shop?category=Fashion"
-        className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
-      >
-        <Image
-          src="/assets/images/icons/bed-2.svg"
-          width={40}
-          height={40}
-          alt="Mattress"
-          className="w-5 h-5 object-contain"
-        />
-        <span className="ml-6 text-gray-600">LAMB</span>
-      </Link>
-      <Link
-        href="/shop?category=Fashion"
-        className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
-      >
-        <Image
-          src="/assets/images/icons/bed-2.svg"
-          width={40}
-          height={40}
-          alt="Mattress"
-          className="w-5 h-5 object-contain"
-        />
-        <span className="ml-6 text-gray-600">Chili specialties</span>
-      </Link>
-      <Link
-        href="/shop?category=Fashion"
-        className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
-      >
-        <Image
-          src="/assets/images/icons/bed-2.svg"
-          width={40}
-          height={40}
-          alt="Mattress"
-          className="w-5 h-5 object-contain"
-        />
-        <span className="ml-6 text-gray-600">FISH & PRAWNS</span>
-      </Link>
-      <Link
-        href="/shop?category=Fashion"
-        className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
-      >
-        <Image
-          src="/assets/images/icons/bed-2.svg"
-          width={40}
-          height={40}
-          alt="Mattress"
-          className="w-5 h-5 object-contain"
-        />
-        <span className="ml-6 text-gray-600">DUCK</span>
-      </Link>
-      <Link
-        href="/shop?category=Fashion"
-        className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
-      >
-        <Image
-          src="/assets/images/icons/bed-2.svg"
-          width={40}
-          height={40}
-          alt="Mattress"
-          className="w-5 h-5 object-contain"
-        />
-        <span className="ml-6 text-gray-600">INDIAN PALACE SPECIALTIES</span>
-      </Link>
-      <Link
-        href="/shop?category=Fashion"
-        className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
-      >
-        <Image
-          src="/assets/images/icons/bed-2.svg"
-          width={40}
-          height={40}
-          alt="Mattress"
-          className="w-5 h-5 object-contain"
-        />
-        <span className="ml-6 text-gray-600">DESSERT</span>
-      </Link>
-      <Link
-        href="/shop?category=Fashion"
-        className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
-      >
-        <Image
-          src="/assets/images/icons/bed-2.svg"
-          width={40}
-          height={40}
-          alt="Mattress"
-          className="w-5 h-5 object-contain"
-        />
-        <span className="ml-6 text-gray-600">Drinks</span>
+        <span className="ml-6 text-gray-600">About us</span>
       </Link>
     </div>
   );

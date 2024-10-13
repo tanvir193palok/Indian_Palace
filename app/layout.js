@@ -1,9 +1,11 @@
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import Header from "@/components/Header";
+import Header from "@/components/header/Header";
 import "./globals.css";
 import Navbar from "@/components/nav/Navbar";
 import Footer from "@/components/Footer";
+import DropdownMenuProvider from "./providers/DropdownMenuProvider";
+import MenuDropdown from "@/components/home/MenuDropdown";
 
 export const metadata = {
   title: "Indian Palace",
@@ -14,9 +16,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Header />
-        <Navbar />
-        {children}
+        <DropdownMenuProvider>
+          <Header />
+          <Navbar />
+          <MenuDropdown /> 
+          {children}
+        </DropdownMenuProvider>
         <Footer />
       </body>
     </html>

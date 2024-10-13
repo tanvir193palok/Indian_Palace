@@ -34,7 +34,7 @@ const CategoryData = ({ category, setActiveCategory }) => {
         <Link
           href="#"
           className="font-primary font-medium 
-      tracking-wide hover:text-nav border-b border-transparent hover:border-b hover:border-nav uppercase pb-10"
+      tracking-wide hover:text-nav border-b border-transparent hover:border-b hover:border-nav uppercase mb-10"
         >
           View More
         </Link>

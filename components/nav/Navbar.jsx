@@ -49,16 +49,16 @@ const Navbar = () => {
   // Disable scrolling when activeCategory is open and account for scrollbar width
   useEffect(() => {
     if (activeCategory) {
-      document.body.style.overflow = "hidden"; // Disable scrolling
-      document.body.style.paddingRight = `${scrollbarWidth}px`; // Prevent layout shift due to scrollbar removal
+      document.body.style.overflow = "hidden"; 
+      document.body.style.paddingRight = `${scrollbarWidth}px`; 
     } else {
-      document.body.style.overflow = ""; // Re-enable scrolling
-      document.body.style.paddingRight = ""; // Reset padding
+      document.body.style.overflow = ""; 
+      document.body.style.paddingRight = ""; 
     }
 
     return () => {
-      document.body.style.overflow = ""; // Ensure scrolling is re-enabled when unmounting
-      document.body.style.paddingRight = ""; // Reset padding
+      document.body.style.overflow = ""; 
+      document.body.style.paddingRight = ""; 
     };
   }, [activeCategory, scrollbarWidth]);
 
@@ -161,12 +161,13 @@ const Navbar = () => {
 
       {activeCategory && (
         <>
-          {/* Dropdown content below the navbar */}
           <div
-            className="absolute left-0 w-full bg-white shadow-lg p-6 top-full transition-all duration-300 z-50"
+            className={`absolute left-0 w-full bg-white shadow-lg p-6 top-full transition-all duration-300 ease-in-out z-50 ${
+              activeCategory ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+            }`}
             style={{
-              transition: "max-height 0.3s ease-in-out",
-              maxHeight: activeCategory ? "500px" : "0",
+              transition:
+                "max-height 0.5s ease-in-out, opacity 0.5s ease-in-out",
               overflow: "hidden",
             }}
           >
