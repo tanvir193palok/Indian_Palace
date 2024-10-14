@@ -33,7 +33,7 @@ const FoodCard = ({ foodData, updateModal, updateModalInfo }) => {
               layout="responsive"
               width={600}
               height={700}
-              className="object-cover h-full rounded-xl"
+              className="object-cover h-full rounded-lg"
             />
           </div>
         </div>
