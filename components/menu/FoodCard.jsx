@@ -19,7 +19,7 @@ const FoodCard = ({ foodData, updateModal, updateModalInfo }) => {
             <h1 className="text-black font-primary font-bold tracking-wide text-lg uppercase pb-1">
               {foodData?.name}
             </h1>
-            <p className="pb-3 text-red-600 font-primary">{foodData?.price}</p>
+            <p className="pb-2 text-heading font-primary text-lg font-semibold">{foodData?.price}</p>
             <p className="font-lato text-text text-sm">
               {foodData?.description}
             </p>

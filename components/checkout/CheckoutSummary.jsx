@@ -2,7 +2,7 @@ const CheckoutSummary = () => {
   let totalPrice = 0;
   return (
     <div className="col-span-3 border border-gray-200 p-4 rounded">
-      <h4 className="text-gray-800 text-lg mb-4 font-medium font-secondary uppercase">
+      <h4 className="text-gray-800 text-lg mb-4 font-medium font-primary tracking-widest uppercase">
         order summary
       </h4>
       <div className="space-y-2">

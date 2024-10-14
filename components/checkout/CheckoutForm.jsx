@@ -13,14 +13,14 @@ const CheckoutForm = () => {
   }
 
   return (
-    <div className="col-span-5 border border-gray-200 p-4 rounded">
-      <h3 className="text-lg font-medium font-secondary uppercase mb-4">Checkout</h3>
+    <div className="col-span-5 border border-gray-200 p-4 rounded font-lato">
+      <h3 className="text-lg font-medium font-primary uppercase mb-4 tracking-widest">Checkout</h3>
       <div className="space-y-4">
         {error && <p className="text-red-500">{error}</p>}
         <form onSubmit={onSubmit}>
-          <div className="grid grid-cols-2 gap-4 font-lato">
+          <div className="grid grid-cols-2 gap-4">
             <div>
-              <label htmlFor="first-name" className="text-gray-600">
+              <label htmlFor="first-name" className="text-text">
                 First Name <span className="text-red-500">*</span>
               </label>
               <input
@@ -32,7 +32,7 @@ const CheckoutForm = () => {
               />
             </div>
             <div>
-              <label htmlFor="last-name" className="text-gray-600">
+              <label htmlFor="last-name" className="text-text">
                 Last Name <span className="text-red-500">*</span>
               </label>
               <input
@@ -45,7 +45,7 @@ const CheckoutForm = () => {
             </div>
           </div>
           <div>
-            <label htmlFor="region" className="text-gray-600">
+            <label htmlFor="region" className="text-text">
               Country/Region
             </label>
             <input
@@ -56,7 +56,7 @@ const CheckoutForm = () => {
             />
           </div>
           <div>
-            <label htmlFor="address" className="text-gray-600">
+            <label htmlFor="address" className="text-text">
               Street address
             </label>
             <input
@@ -68,19 +68,19 @@ const CheckoutForm = () => {
             />
           </div>
           <div>
-            <label htmlFor="city" className="text-gray-600">
+            <label htmlFor="city" className="text-text">
               City
             </label>
             <input type="text" name="city" id="city" className="input-box" />
           </div>
           <div>
-            <label htmlFor="phone" className="text-gray-600">
+            <label htmlFor="phone" className="text-text">
               Phone number
             </label>
             <input type="text" name="phone" id="phone" className="input-box" />
           </div>
           <div>
-            <label htmlFor="email" className="text-gray-600">
+            <label htmlFor="email" className="text-text">
               Email address
             </label>
             <input
@@ -101,7 +101,7 @@ const CheckoutForm = () => {
             />
             <label
               htmlFor="aggrement"
-              className="text-gray-600 ml-3 cursor-pointer text-sm"
+              className="text-text ml-3 cursor-pointer text-sm"
             >
               I agree to the{" "}
               <Link href="#" className="text-primary">
