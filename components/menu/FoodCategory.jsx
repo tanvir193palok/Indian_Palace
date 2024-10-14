@@ -4,10 +4,11 @@ import { useState } from "react";
 import FoodCard from "./FoodCard";
 import FoodModal from "./FoodModal";
 
-const FoodCategory = () => {
+const FoodCategory = ({ category }) => {
   const [showModal, setShowModal] = useState(false);
   const [modalInfo, setModalInfo] = useState(null);
 
+  //Dummy data
   const foodData = {
     name: "Murg Briyani",
     description:
@@ -16,11 +17,13 @@ const FoodCategory = () => {
     imageSrc: "/menu/food3.jpg",
   };
 
+  //Add method to fetch data based on category
+
   return (
     <div className="col-span-9 pb-20">
       <div className="flex flex-col justify-center items-center mb-8">
         <p className="mb-2 uppercase tracking-widest font-secondary italic text-3xl text-nav font-extrabold pb-2 border-b-2 border-nav">
-          Starters
+          {category}
         </p>
         <p className="font-lato text-lg">Description / quote</p>
       </div>

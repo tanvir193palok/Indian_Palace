@@ -8,23 +8,7 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import CategoryData from "./CategoryData";
-
-const categories = [
-  "Starters",
-  "Supplements",
-  "Indian Bread",
-  "Vegetarian & Vegan",
-  "Biryanis",
-  "Tandoori Specialties",
-  "Chicken",
-  "Lamb",
-  "Chili Specialties",
-  "Fish & Prawns",
-  "Duck",
-  "Indian Palace Specialties",
-  "Dessert",
-  "Drinks",
-];
+import { categoriesData } from "@/data";
 
 const Navbar = () => {
   const scrollRef = useRef(null);
@@ -49,16 +33,16 @@ const Navbar = () => {
   // Disable scrolling when activeCategory is open and account for scrollbar width
   useEffect(() => {
     if (activeCategory) {
-      document.body.style.overflow = "hidden"; 
-      document.body.style.paddingRight = `${scrollbarWidth}px`; 
+      document.body.style.overflow = "hidden";
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
     } else {
-      document.body.style.overflow = ""; 
-      document.body.style.paddingRight = ""; 
+      document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
     }
 
     return () => {
-      document.body.style.overflow = ""; 
-      document.body.style.paddingRight = ""; 
+      document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
     };
   }, [activeCategory, scrollbarWidth]);
 
@@ -129,14 +113,14 @@ const Navbar = () => {
           className="flex w-[800px] overflow-hidden scrollbar-hide pb-2 mx-3"
         >
           <div className="flex space-x-5 py-3">
-            {categories.map((category) => (
+            {categoriesData.map((category) => (
               <div
                 className="relative group"
                 key={category}
                 onMouseEnter={() => setActiveCategory(category)}
               >
                 <Link
-                  href={`/shop?category=${encodeURIComponent(category)}`}
+                  href=""
                   className="relative px-3 py-3 whitespace-nowrap font-primary font-semibold text-md uppercase text-text transition rounded-md hover:bg-gray-200"
                   style={{ boxSizing: "border-box" }}
                 >

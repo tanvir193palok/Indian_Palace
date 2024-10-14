@@ -1,9 +1,15 @@
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { menuData } from "@/data";
-import Link from "next/link";
 
 const CategoryData = ({ category, setActiveCategory }) => {
   const { menuItems } = menuData;
+  const router = useRouter();
+
+  const handleRedirect = () => {
+    router.push(`/menu?category=${encodeURIComponent(category)}`);
+    setActiveCategory(null);
+  };
 
   return (
     <div
@@ -31,13 +37,13 @@ const CategoryData = ({ category, setActiveCategory }) => {
         ))}
       </div>
       <div className="flex justify-center">
-        <Link
-          href="#"
+        <button
+          onClick={handleRedirect}
           className="font-primary font-medium 
-      tracking-wide hover:text-nav border-b border-transparent hover:border-b hover:border-nav uppercase mb-10"
+          tracking-wide hover:text-nav border-b border-transparent hover:border-b hover:border-nav uppercase mb-10"
         >
           View More
-        </Link>
+        </button>
       </div>
     </div>
   );

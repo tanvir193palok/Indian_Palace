@@ -61,6 +61,23 @@ export const bannersData = [
   },
 ];
 
+export const categoriesData = [
+  "Starters",
+  "Supplements",
+  "Indian Bread",
+  "Vegetarian & Vegan",
+  "Biryanis",
+  "Tandoori Specialties",
+  "Chicken",
+  "Lamb",
+  "Chili Specialties",
+  "Fish & Prawns",
+  "Duck",
+  "Indian Palace Specialties",
+  "Dessert",
+  "Drinks",
+];
+
 export const menuData = {
   title: "With Our Menu",
   description:
