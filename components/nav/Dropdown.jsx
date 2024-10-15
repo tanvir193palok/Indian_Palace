@@ -45,6 +45,14 @@ const Dropdown = () => {
       </Link>
 
       <Link
+      href="/reservation"
+      onClick={(prev) => setDropdownMenu(!prev)}
+      className="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+    >
+      <span className="ml-6 text-gray-600">Reservations</span>
+    </Link>
+
+      <Link
         href="/location"
         onClick={(prev) => setDropdownMenu(!prev)}
         className="flex items-center px-6 py-3 hover:bg-gray-100 transition"

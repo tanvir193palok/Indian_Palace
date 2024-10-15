@@ -12,7 +12,6 @@ const LocationPage = () => {
         Find us at our location below, and come enjoy a meal with us!
       </div>
 
-      {/* Flex container to position AddressInfo and Map side by side */}
       <div className="relative z-10 flex items-center justify-between px-10">
         {/* Address Info Section (Left) */}
         <div className="w-full md:w-[30%]">
