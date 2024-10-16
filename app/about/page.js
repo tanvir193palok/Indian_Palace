@@ -3,7 +3,7 @@ import Timing from "@/components/about/Timing";
 
 const AboutPage = () => {
   return (
-    <div className="py-10">
+    <div className="pt-10 mb-32">
       <Intro />
       <Timing />
     </div>

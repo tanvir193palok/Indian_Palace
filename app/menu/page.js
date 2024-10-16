@@ -7,7 +7,7 @@ const MenuPage = ({ searchParams: { category } }) => {
   const categories = category ? [category] : categoriesData;
 
   return (
-    <div className="relative container grid grid-cols-12 items-start pb-16 pt-4 gap-6">
+    <div className="relative container grid grid-cols-12 items-start pb-16 pt-4 gap-6 mb-32">
       <Overlay />
       <div className="col-span-8 grid grid-cols-3 gap-4 h-[75vh] overflow-y-auto hiddenScrollbar">
         {categories.map((category, idx) => (

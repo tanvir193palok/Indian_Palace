@@ -14,13 +14,14 @@ const Socials = () => {
         const isHovered = hovered === idx;
         return (
           <Link
-            className="border border-white/50 rounded-full w-[45px] h-[45px] flex justify-center items-center text-sm transition-all"
+            className="border border-white  rounded-full w-[45px] h-[45px] flex justify-center items-center text-sm transition-all"
             href={item.href}
             key={idx}
             onMouseEnter={() => setHovered(idx)}
             onMouseLeave={() => setHovered(null)}
             style={{
               borderColor: isHovered ? item.color : "rgba(255, 255, 255, 0.5)",
+              background: isHovered && "white",
             }}
           >
             <FontAwesomeIcon
