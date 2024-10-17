@@ -1,7 +1,7 @@
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import Header from "@/components/header/Header";
-import "./globals.css";
+import "../globals.css";
 import Navbar from "@/components/nav/Navbar";
 import Footer from "@/components/Footer";
 import DropdownMenuProvider from "./providers/DropdownMenuProvider";

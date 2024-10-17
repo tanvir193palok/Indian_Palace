@@ -2,8 +2,7 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { useDropdownMenu } from "@/app/hooks/useDropdownMenu";
-
+import { useDropdownMenu } from "@/app/(home)/hooks/useDropdownMenu";
 
 const LeftCornerLinks = () => {
   const { dropdownMenu, setDropdownMenu } = useDropdownMenu();

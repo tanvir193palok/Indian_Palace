@@ -1,6 +1,6 @@
 "use client";
 
-import { useDropdownMenu } from "@/app/hooks/useDropdownMenu";
+import { useDropdownMenu } from "@/app/(home)/hooks/useDropdownMenu";
 import Dropdown from "../nav/Dropdown";
 
 const MenuDropdown = () => {

@@ -17,12 +17,9 @@ const RightCornerLinks = () => {
         </div>
       </Link>
       <Link
-        href="#"
+        href="/login"
         className="text-center hover:text-white transition relative"
       >
-        <div className="text-2xl">
-          <i className="fa-regular fa-user"></i>
-        </div>
         <div className="font-primary font-semibold text-md text-text hover:text-nav leading-3 uppercase">
           Admin?
         </div>
