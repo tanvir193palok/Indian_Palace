@@ -9,7 +9,7 @@ const Dropdown = () => {
   return (
     <div
       className="absolute container font-primary font-medium text-md left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-100
-   transition duration-300 visible w-[400px] uppercase"
+   transition duration-300 visible w-[400px] uppercase -mt-2"
       style={{ top: "100%" }}
     >
       <Link

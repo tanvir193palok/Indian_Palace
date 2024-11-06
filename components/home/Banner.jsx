@@ -32,16 +32,16 @@ const Banner = () => {
 
   return (
     <div className="relative">
-      <div className="flex relative z-10">
+      <div className="flex flex-col md:flex-row relative z-10">
         {/* Left Text Section */}
-        <div className="flex flex-col justify-center bg-gray-50 w-[40%] p-12 pl-20">
+        <div className="flex flex-col order-2 md:order-none justify-center bg-gray-50 w-full md:w-[40%] p-3 md:p-12 md:pl-20">
           <h1
             className="text-3xl font-secondary tracking-widest mb-6 uppercase"
             style={{ wordSpacing: "4px" }}
           >
             {title}
           </h1>
-          <p className="font-lato text-lg mb-6 text-text1">{description}</p>
+          <p className="font-lato text-lg mb-6 text-text">{description}</p>
           <div className="mt-10 mb-10">
             <Link
               href="/menu"
@@ -54,12 +54,12 @@ const Banner = () => {
 
         {/* Right Image Section */}
         <div
-          className="w-[60%] h-[510px] bg-cover bg-center"
+          className="order-1 md:order-none w-full md:w-[60%] h-[400px] md:h-[510px] bg-cover bg-center"
           style={{ backgroundImage: `url(${image})` }}
         ></div>
 
         {/* Left Navigation Arrow */}
-        <div className="absolute top-1/2 left-2 z-30 transform -translate-y-1/2 hover:border-2 hover:border-heading px-2">
+        <div className="absolute top-1/3 md:top-1/2 left-2 z-30 transform -translate-y-1/2 hover:border-2 hover:border-heading px-2">
           <FontAwesomeIcon
             icon={faCaretLeft}
             className="text-heading text-4xl cursor-pointer hover:text-nav"
@@ -68,7 +68,7 @@ const Banner = () => {
         </div>
 
         {/* Right Navigation Arrow */}
-        <div className="absolute top-1/2 right-2 z-30 transform -translate-y-1/2 hover:border-2 hover:border-heading px-2">
+        <div className="absolute top-1/3 md:top-1/2 right-2 z-30 transform -translate-y-1/2 hover:border-2 hover:border-heading px-2">
           <FontAwesomeIcon
             icon={faCaretRight}
             className="text-heading text-4xl cursor-pointer hover:text-nav"

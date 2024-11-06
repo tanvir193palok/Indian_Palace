@@ -9,7 +9,7 @@ export default function Home() {
     <div className="relative mb-32">
       <Overlay />
       <Banner />
-      <div className="container">
+      <div className="px-3 md:px-0 md:container">
         <div className="px-32 pt-28">
           <p className="flex justify-center items-center text-[36px] font-primary font-semibold italic">
             We are Germany’s favourite local Italian, inviting you to come

@@ -14,12 +14,12 @@ const LeftCornerLinks = () => {
   return (
     <div className="relative">
       <div
-        className="px-8 w-40 py-4 bg-primary md:flex items-center cursor-pointer relative group hidden"
+        className="lg:px-8 lg:w-40 lg:py-4 bg-primary flex items-center cursor-pointer relative group"
         onClick={toggleDropdownMenu}
       >
-        <div className="flex items-center text-text hover:text-nav">
+        <div className="flex text-2xl lg:text-base items-center text-text hover:text-nav">
           <FontAwesomeIcon icon={dropdownMenu ? faXmark : faBars} />
-          <span className="w-full uppercase ml-2 font-primary font-semibold text-md text-text hover:text-nav">
+          <span className="w-full hidden lg:block uppercase ml-2 font-primary font-semibold text-md text-text hover:text-nav">
             {dropdownMenu ? "Close" : "Menu"}
           </span>
         </div>
