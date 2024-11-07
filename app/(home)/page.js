@@ -6,7 +6,7 @@ import Overlay from "@/components/Overlay";
 
 export default function Home() {
   return (
-    <div className="relative mb-32">
+    <div className="relative mb-14 lg:mb-32">
       <Overlay />
       <Banner />
       <div className="px-3 md:px-0 md:container">
