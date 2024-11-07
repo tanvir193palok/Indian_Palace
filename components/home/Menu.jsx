@@ -5,7 +5,7 @@ const Menu = () => {
   const { title, description, menuItems, btnText } = menuData;
 
   return (
-    <section className="min-h-[780px] pt-28">
+    <section className="min-h-[780px] lg:pt-28">
       {/* background */}
       <div
         className="h-[780px] bg-[url('/menu/bg.png')] 
@@ -13,12 +13,12 @@ const Menu = () => {
       ></div>
 
       {/* text */}
-      <div className="relative container z-10 top-72 lg:top-52">
-        <div className="mx-auto px-32 flex flex-col items-center text-center">
-          <h2 className="capitalize text-white max-w-[400px] text-center text-[36px] font-secondary font-bold pb-6">
+      <div className="relative px-3 lg:container z-10 top-28 lg:top-52">
+        <div className="flex flex-col lg:px-32 items-center text-center">
+          <h2 className="capitalize text-white max-w-[400px] text-center text-[24px] lg:text-[36px] font-secondary font-bold pb-3 lg:pb-6">
             {title}
           </h2>
-          <p className="text-white/70 capitalize mb-8 font-lato text-[18px]">
+          <p className="text-white/70 capitalize mb-8 font-lato text-[14px] lg:text-[18px]">
             {description}
           </p>
         </div>

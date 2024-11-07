@@ -10,15 +10,15 @@ export default function Home() {
       <Overlay />
       <Banner />
       <div className="px-3 md:px-0 md:container">
-        <div className="px-32 pt-28">
-          <p className="flex justify-center items-center text-[36px] font-primary font-semibold italic">
+        <div className="lg:px-32 py-10 lg:py-0 lg:pt-28">
+          <p className="flex justify-center items-center text-center lg:pb-4 text-lg lg:text-[36px] font-primary font-medium lg:font-semibold italic">
             We are Germany’s favourite local Italian, inviting you to come
             together
           </p>
-          <p className="flex justify-center pb-6 text-[36px] font-primary font-semibold italic">
+          <p className="flex justify-center text-center lg:text-balance pb-2 lg:pb-6 text-lg lg:text-[36px] font-primary font-medium lg:font-semibold italic">
             with your friends & family to share an authentic Italian feast.
           </p>
-          <p className="px-40 text-text text-center text-[18px] font-lato">
+          <p className="lg:px-40 text-text text-center text-[14px] lg:text-[18px] font-lato">
             Bring your friends and family to experience a delicious, authentic
             Italian feast! Patio Time is a place for everyone, and your next
             meal is never too far away, with 4 locations all across Sydney. We

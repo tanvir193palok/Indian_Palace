@@ -34,15 +34,15 @@ const Banner = () => {
     <div className="relative">
       <div className="flex flex-col md:flex-row relative z-10">
         {/* Left Text Section */}
-        <div className="flex flex-col order-2 md:order-none justify-center bg-gray-50 w-full md:w-[40%] p-3 md:p-12 md:pl-20">
+        <div className="flex flex-col order-2 md:order-none justify-center text-center lg:text-left bg-gray-50 w-full md:w-[40%] p-3 md:p-12 md:pl-20">
           <h1
-            className="text-3xl font-secondary tracking-widest mb-6 uppercase"
+            className="text-2xl lg:text-3xl font-secondary tracking-widest mb-3 lg:mb-6 uppercase"
             style={{ wordSpacing: "4px" }}
           >
             {title}
           </h1>
-          <p className="font-lato text-lg mb-6 text-text">{description}</p>
-          <div className="mt-10 mb-10">
+          <p className="font-lato text-base lg:text-lg mb-6 text-text">{description}</p>
+          <div className="mt-6 lg:mt-10 mb-10">
             <Link
               href="/menu"
               className="border border-text text-black font-primary tracking-wide px-8 py-4 font-medium rounded-md hover:bg-text hover:text-white uppercase"

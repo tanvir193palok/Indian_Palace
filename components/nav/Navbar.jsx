@@ -112,7 +112,7 @@ const Navbar = () => {
           ref={scrollRef}
           className="flex w-[800px] overflow-hidden scrollbar-hide pb-2 mx-3"
         >
-          <div className="flex space-x-5 py-3">
+          <div className="flex space-x-2 lg:space-x-5 py-3">
             {categoriesData.map((category) => (
               <div
                 className="relative group"
@@ -121,7 +121,7 @@ const Navbar = () => {
               >
                 <Link
                   href=""
-                  className="relative px-3 py-3 whitespace-nowrap font-primary font-semibold text-md uppercase text-text transition rounded-md hover:bg-gray-200"
+                  className="relative px-2 py-2 lg:px-3 lg:py-3 whitespace-nowrap font-primary font-semibold text-sm lg:text-base uppercase text-text transition rounded-md hover:bg-gray-200"
                   style={{ boxSizing: "border-box" }}
                 >
                   <span className="transition-all pb-1 border-b-2 border-black border-opacity-0 group-hover:border-opacity-100">

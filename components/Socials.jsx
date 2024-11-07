@@ -9,7 +9,7 @@ const Socials = () => {
   const [hovered, setHovered] = useState(null);
 
   return (
-    <div className="flex gap-x-[10px]">
+    <div className="flex gap-x-[14px] lg:gap-x-[10px]">
       {socialData.map((item, idx) => {
         const isHovered = hovered === idx;
         return (
