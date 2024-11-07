@@ -11,22 +11,24 @@ const FoodCard = ({ foodData, updateModal, updateModalInfo }) => {
       <div className="mx-auto h-full relative border border-nav shadow-md rounded-xl overflow-hidden">
         {/* text & img wrapper */}
         <div
-          className="flex flex-col lg:flex-row h-full
-            items-stretch justify-center gap-x-4 text-center lg:text-left"
+          className="flex flex-row h-full
+            items-stretch justify-center gap-x-2 lg:gap-x-4 text-left"
         >
           {/* text */}
-          <div className="flex-[65%] flex flex-col items-center lg:items-start pt-3 pl-3">
-            <h1 className="text-black font-primary font-bold tracking-wide text-lg uppercase pb-1">
+          <div className="flex-[50%] lg:flex-[65%] flex flex-col items-start py-1 lg:py-3 pl-2 lg:pl-3">
+            <h1 className="text-black font-primary font-medium lg:font-bold tracking-normal lg:tracking-wide text-base lg:text-lg uppercase pb-1">
               {foodData?.name}
             </h1>
-            <p className="pb-2 text-heading font-primary text-lg font-semibold">{foodData?.price}</p>
-            <p className="font-lato text-text text-sm">
+            <p className="pb-1 lg:pb-2 text-heading font-primary text-base lg:text-lg font-semibold">
+              {foodData?.price}
+            </p>
+            <p className="font-lato text-text text-xs lg:text-sm">
               {foodData?.description}
             </p>
           </div>
 
           {/* image */}
-          <div className="flex flex-[35%] h-full justify-center p-2">
+          <div className="flex flex-[50%] h-full justify-center p-2">
             <Image
               src={foodData?.imageSrc}
               alt="Murg Briyani"

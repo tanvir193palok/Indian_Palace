@@ -20,12 +20,12 @@ const FoodCategory = ({ category }) => {
   //Add method to fetch data based on category
 
   return (
-    <div className="col-span-9 pb-20">
-      <div className="flex flex-col justify-center items-center mb-8">
-        <p className="mb-2 uppercase tracking-widest font-secondary italic text-3xl text-nav font-extrabold pb-2 border-b-2 border-nav">
+    <div className="col-span-9 pb-10 lg:pb-20">
+      <div className="flex flex-col justify-center items-center mb-4 lg:mb-8">
+        <p className="mb-2 uppercase tracking-wide lg:tracking-widest font-secondary italic text-xl lg:text-3xl text-nav font-medium lg:font-extrabold pb-1 lg:pb-2 border-b-2 border-nav">
           {category}
         </p>
-        <p className="font-lato text-lg">Description / quote</p>
+        <p className="font-lato text-sm lg:text-lg">Description / quote</p>
       </div>
 
       <div className="grid md:grid-cols-2 grid-cols-1 gap-3">
