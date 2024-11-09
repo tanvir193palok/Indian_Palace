@@ -12,7 +12,7 @@ const NewArrival = () => {
           className="flex flex-col lg:flex-row h-full
    items-center justify-center  text-center lg:text-left"
         >
-          <div className="flex-1 max-h-96 lg:max-h-max order-1 lg:order-none overflow-hidden pt-12">
+          <div className="flex-1 max-h-96 lg:max-h-max order-1 lg:order-none overflow-hidden lg:pt-12">
             <Image src="/food1.jpg" alt="" width={550} height={700} />
           </div>
 
@@ -44,7 +44,7 @@ const NewArrival = () => {
                   className="flex-1 lg:pt-6 lg:w-auto z-10 flex flex-col
              justify-center items-start"
                 >
-                  <h1 className="text-nav font-primary font-medium lg:font-bold tracking-wider lg:tracking-widest text-sm lg:text-lg uppercase pb-2">
+                  <h1 className="text-nav font-primary font-medium lg:font-bold tracking-wide lg:tracking-widest text-sm lg:text-lg uppercase pb-2">
                     Murg Briyani
                   </h1>
                   <p className="mb-2 text-left max-w-sm lg:max-w-md text-sm font-lato text-text">
@@ -56,8 +56,8 @@ const NewArrival = () => {
                   </p>
                   <Link
                     href="#"
-                    className="bg-text border border-text text-white px-8 py-4 font-primary font-medium 
-                    rounded-md tracking-wide hover:bg-transparent hover:text-text hover:border-nav uppercase mt-6"
+                    className="bg-text border border-text text-white px-4 lg:px-8 py-3 lg:py-4 font-primary font-normal text-sm lg:text-base lg:font-medium 
+                    rounded-md tracking-normal lg:tracking-wide hover:bg-transparent hover:text-text hover:border-nav uppercase mt-2 lg:mt-6"
                   >
                     Order Now
                   </Link>
