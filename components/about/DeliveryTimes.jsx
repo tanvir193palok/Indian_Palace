@@ -1,7 +1,7 @@
 const DeliveryTimes = () => {
   return (
     <div className="border border-nav p-4 rounded shadow-md">
-      <h3 className="text-xl font-bold mb-4">Delivery Times</h3>
+      <h3 className="text-xl font-semibold lg:font-bold mb-4">Delivery Times</h3>
       <table className="w-full text-left border-collapse border border-gray-300">
         <thead>
           <tr className="bg-gray-100">

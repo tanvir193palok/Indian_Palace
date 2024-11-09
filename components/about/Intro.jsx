@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Intro = () => {
   return (
-    <div className="px-32">
+    <div className="px-3 lg:px-32">
       <div className="mx-auto h-full relative">
         <div
           className="flex flex-col lg:flex-row h-full
@@ -18,7 +18,7 @@ const Intro = () => {
           </div>
 
           <div
-            className="flex-1 pt-36 pb-14 lg:pt-2 lg:w-auto z-10 flex flex-col
+            className="flex-1 pb-2 lg:pb-14 lg:pt-2 lg:w-auto z-10 flex flex-col
        justify-center items-center lg:items-start"
           >
             <div className="flex flex-col gap-10">
@@ -36,10 +36,10 @@ const Intro = () => {
            items-center justify-center gap-x-5 text-center lg:text-left"
               >
                 <div
-                  className="flex-1 pt-36 pb-14 lg:pt-2 lg:w-auto z-10 flex flex-col
+                  className="flex-1 pb-6 lg:pb-14 lg:pt-2 lg:w-auto z-10 flex flex-col
              justify-center items-center lg:items-start font-lato"
                 >
-                  <h1 className="text-text font-secondary font-bold tracking-widest text-xl uppercase pb-4">
+                  <h1 className="text-text font-secondary font-semibold lg:font-bold tracking-widest text-xl uppercase pb-4">
                     Indian Palace
                   </h1>
                   <p className="mb-2 max-w-2xl text-sm md:text-lg">

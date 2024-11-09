@@ -1,16 +1,16 @@
 const ReservationsPage = () => {
   return (
     <div
-      className="relative h-[1000px] bg-cover bg-center"
+      className="relative h-[800px] lg:h-[1000px] bg-cover bg-center"
       style={{ backgroundImage: `url('/about/reservation.jpg')` }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center">
-        <div className="bg-white bg-opacity-90 px-8 py-10 rounded shadow-lg max-w-lg w-full text-center">
-          <h1 className="text-3xl font-bold mb-6 text-gray-800">
+      <div className="absolute px-3 lg:px-0 inset-0 bg-black bg-opacity-40 flex justify-center items-center">
+        <div className="bg-white bg-opacity-90 px-4 lg:px-8 py-10 rounded shadow-lg max-w-lg w-full text-center">
+          <h1 className="text-xl lg:text-3xl font-semibold lg:font-bold mb-4 lg:mb-6 text-gray-800">
             Make a Reservation
           </h1>
 
-          <form className="space-y-4">
+          <form className="space-y-3 lg:space-y-4">
             <div>
               <label className="block text-gray-700 pb-1">Name</label>
               <input

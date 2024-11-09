@@ -15,7 +15,7 @@ const FoodCard = ({ foodData, updateModal, updateModalInfo }) => {
             items-stretch justify-center gap-x-2 lg:gap-x-4 text-left"
         >
           {/* text */}
-          <div className="flex-[50%] lg:flex-[65%] flex flex-col items-start py-1 lg:py-3 pl-2 lg:pl-3">
+          <div className="flex-[50%] lg:flex-[65%] flex flex-col items-start py-2 lg:py-3 pl-2 lg:pl-3">
             <h1 className="text-black font-primary font-medium lg:font-bold tracking-normal lg:tracking-wide text-base lg:text-lg uppercase pb-1">
               {foodData?.name}
             </h1>

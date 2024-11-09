@@ -12,12 +12,12 @@ const NewArrival = () => {
           className="flex flex-col lg:flex-row h-full
    items-center justify-center  text-center lg:text-left"
         >
-          <div className="flex-1 max-h-96 lg:max-h-max order-1 lg:order-none overflow-hidden">
+          <div className="flex-1 max-h-96 lg:max-h-max order-1 lg:order-none overflow-hidden pt-12">
             <Image src="/food1.jpg" alt="" width={550} height={700} />
           </div>
 
           <div
-            className="flex-1 order-2 lg:order-none pt-2 lg:w-auto z-10 flex flex-col
+            className="flex-1 order-2 lg:order-none pt-2 lg:pt-0 lg:w-auto z-10 flex flex-col
        justify-center items-center lg:items-start"
           >
             <div className="flex flex-col gap-10">
@@ -36,7 +36,7 @@ const NewArrival = () => {
               >
                 {/* image */}
                 <div className="flex-1 max-h-96 lg:max-h-max overflow-hidden">
-                  <Image src="/food1.jpg" alt="" width={260} height={300} />
+                  <Image src="/food1.jpg" alt="" width={280} height={300} />
                 </div>
 
                 {/* text */}

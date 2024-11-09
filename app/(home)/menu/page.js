@@ -7,7 +7,7 @@ const MenuPage = ({ searchParams: { category } }) => {
   const categories = category ? [category] : categoriesData;
 
   return (
-    <div className="relative px-3 lg:px-0 lg:container grid gap-6 mb-14 lg:mb-32 pt-4">
+    <div className="relative px-3 lg:px-14 grid gap-6 mb-14 lg:mb-32 pt-4">
       <Overlay />
 
       {/* Responsive layout for CheckoutSummary on top on small screens */}
