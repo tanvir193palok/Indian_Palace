@@ -9,7 +9,7 @@ const BestSelling = () => {
       </p>
       <div className="lg:container h-full relative pt-4">
         {/* text & img wrapper */}
-        <div className="flex flex-col lg:flex-row h-full items-center justify-center gap-x-20 text-center lg:text-left">
+        <div className="flex flex-col lg:flex-row h-full items-center justify-center gap-x-14 text-center lg:text-left">
           {/* image (Top on small screens) */}
           <div className="flex-1 max-h-96 lg:max-h-max order-1 lg:order-none overflow-hidden">
             <Image
@@ -30,10 +30,6 @@ const BestSelling = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus
               <b> scelerisque viverra</b> at id aenean scelerisque. Nec eget
               condimentum etiam leo.
-              <br />
-              <br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <Link
               href="#"

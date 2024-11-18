@@ -14,6 +14,7 @@ const Intro = () => {
               alt=""
               width={550}
               height={700}
+              className="w-full lg:w-[92%] object-cover"
             />
           </div>
 

@@ -24,12 +24,12 @@ const MenuItem = ({ item, idx }) => {
         </div>
 
         {/* Text */}
-        <div className="bg-[#fff3e4] flex-1 flex flex-col justify-center px-6 lg:p-[50px] md:h-[250px] lg:h-[300px] xl:max-h-max">
+        <div className="bg-[#fff3e4] flex-1 flex flex-col justify-center px-6 lg:px-0 lg:p-[50px] md:h-[250px] lg:h-[300px] xl:max-h-max">
           <div className="text-center">
-            <div className="text-lg lg:text-xl font-medium lg:font-semibold text-dark xl:text-2xl">
+            <div className="text-lg md:text-xl font-medium lg:font-semibold text-dark xl:text-2xl">
               {name}
             </div>
-            <div className="my-1 text-[20px] lg:text-[40px] lg:my-6 text-accent font-semibold">
+            <div className="my-1 text-[20px] md:text-[30px] lg:text-[40px] md:my-3 lg:my-6 font-semibold">
               {price}
             </div>
             <div className="text-[14px] lg:text-[18px]">{description}</div>
