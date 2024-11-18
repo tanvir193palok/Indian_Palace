@@ -25,7 +25,7 @@ const ClickActions = () => {
       <div className="flex  items-center border border-gray-300 rounded-md overflow-hidden">
         <button
           onClick={() => handleQuantityChange("decrement")}
-          className="px-4 py-2 bg-gray-200 text-lg font-bold hover:bg-gray-300"
+          className="px-3 lg:px-4 py-2 bg-gray-200 text-lg font-bold hover:bg-gray-300"
         >
           -
         </button>

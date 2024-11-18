@@ -3,9 +3,9 @@ import MenuItem from "./MenuItem";
 
 const MenuGallery = ({ menuItems, btnText }) => {
   return (
-    <div className="relative top-32 lg:top-96 pb-[200px] lg:pb-[500px] px-6 lg:px-32">
+    <div className="relative top-32 md:top-52 lg:top-96 pb-[200px] lg:pb-[500px] px-3 md:px-8 lg:px-32">
       <div className="lg:container">
-        <div className="lg:-mt-24 min-h-[590px] z-30 mb-8 md:mb-4 xl:mb-16">
+        <div className="lg:-mt-24 min-h-[590px] z-30 mb-8 md:mb-12 xl:mb-16">
           {/* Grid of Menu Items */}
           <div className="grid grid-cols-1 lg:grid-cols-4 min-h-[590px]">
             {menuItems.map((item, idx) => (

@@ -6,10 +6,10 @@ import Overlay from "@/components/Overlay";
 
 export default function Home() {
   return (
-    <div className="relative mb-14 lg:mb-32">
+    <div className="relative mb-14 md:mb-20 lg:mb-32">
       <Overlay />
       <Banner />
-      <div className="px-3 md:px-0 md:container">
+      <div className="px-3 md:px-8 lg:px-0 lg:container">
         <div className="lg:px-32 py-10 lg:py-0 lg:pt-28">
           <p className="flex justify-center items-center text-center lg:pb-4 text-lg lg:text-[36px] font-primary font-medium lg:font-semibold italic">
             We are Germany’s favourite local Italian, inviting you to come

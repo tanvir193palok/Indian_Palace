@@ -51,7 +51,7 @@ const FoodCategory = ({ category }) => {
         />
 
         {showModal && (
-          <div className="hidden md:flex fixed top-0 left-0 w-full h-full items-center justify-center z-50 bg-black bg-opacity-70">
+          <div className="flex fixed top-0 left-0 w-full h-full items-center justify-center z-50 bg-black bg-opacity-70">
             <FoodModal modalInfo={modalInfo} showModal={setShowModal} />
           </div>
         )}

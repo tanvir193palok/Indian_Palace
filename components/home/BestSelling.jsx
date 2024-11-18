@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const BestSelling = () => {
   return (
-    <div className="px-3 lg:px-32 py-10 lg:py-0 lg:pt-28 font-lato">
+    <div className="px-3 md:px-8 lg:px-32 py-10 lg:py-0 lg:pt-28 font-lato">
       <p className="flex justify-center uppercase tracking-widest font-secondary italic text-2xl lg:text-5xl text-nav font-extrabold pb-2 lg:pb-10 border-b-2 border-nav">
         Best Selling
       </p>
@@ -14,7 +14,7 @@ const BestSelling = () => {
         >
           {/* image (Top on small screens) */}
           <div className="flex-1 max-h-96 lg:max-h-max order-1 lg:order-none overflow-hidden">
-            <Image src="/banner/banner2.jpg" alt="Best Selling" width={600} height={500} />
+            <Image src="/banner/banner2.jpg" alt="Best Selling" width={700} height={600} className="w-full h-auto object-fill" />
           </div>
 
           {/* text (Below image on small screens) */}
