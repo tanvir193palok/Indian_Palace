@@ -8,7 +8,7 @@ const MenuItem = ({ item, idx }) => {
       <div className="flex flex-row lg:flex-col h-full ">
         {/* Image Container */}
         <div
-          className={`w-[150px] md:w-[350px] lg:w-full h-[150px] lg:h-[295px] ${
+          className={`w-[150px] md:w-[350px] lg:w-full h-[150px] lg:h-[294px] ${
             idx === 1 || idx === 3 ? "lg:order-1" : ""
           }`}
         >
@@ -17,9 +17,9 @@ const MenuItem = ({ item, idx }) => {
             src={image}
             alt={name}
             width={700}
-            height={700}
+            height={600}
             objectFit="cover"
-            className="h-[150px] md:h-[250px] lg:h-[300px] object-fill"
+            className="h-[150px] md:h-[250px] lg:h-[294px] object-fill"
           />
         </div>
 
