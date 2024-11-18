@@ -9,18 +9,20 @@ const BestSelling = () => {
       </p>
       <div className="lg:container h-full relative pt-4">
         {/* text & img wrapper */}
-        <div
-          className="flex flex-col lg:flex-row h-full items-center justify-center gap-x-20 text-center lg:text-left"
-        >
+        <div className="flex flex-col lg:flex-row h-full items-center justify-center gap-x-20 text-center lg:text-left">
           {/* image (Top on small screens) */}
           <div className="flex-1 max-h-96 lg:max-h-max order-1 lg:order-none overflow-hidden">
-            <Image src="/banner/banner2.jpg" alt="Best Selling" width={700} height={600} className="w-full h-auto object-fill" />
+            <Image
+              src="/banner/banner2.jpg"
+              alt="Best Selling"
+              width={700}
+              height={600}
+              className="w-full h-auto object-fill"
+            />
           </div>
 
           {/* text (Below image on small screens) */}
-          <div
-            className="flex-1 pt-4 pb-14 lg:pt-2 z-10 flex flex-col justify-center items-center lg:items-start order-2 lg:order-none"
-          >
+          <div className="flex-1 pt-4 pb-14 lg:pt-2 z-10 flex flex-col justify-center items-center lg:items-start order-2 lg:order-none">
             <h1 className="text-nav font-primary font-bold tracking-widest text-xl uppercase pb-2">
               Murg Briyani
             </h1>
@@ -48,4 +50,3 @@ const BestSelling = () => {
 };
 
 export default BestSelling;
-

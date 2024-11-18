@@ -18,8 +18,9 @@ const NewArrival = () => {
               src="/food1.jpg"
               alt="Delicious food"
               width={750}
-              height={700}
-              className="w-full  object-fill"
+              height={800}
+              priority
+              className="w-full lg:w-[92%] object-cover"
             />
           </div>
 

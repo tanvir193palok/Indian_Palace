@@ -5,7 +5,7 @@ import ClickActions from "./ClickActions";
 
 const FoodModal = ({ modalInfo, showModal }) => {
   return (
-    <div className="relative w-full max-w-[90%] md:max-w-[35%] lg:h-[90%] h-auto px-2 lg:px-6 pt-2 lg:pt-4 pb-3 lg:pb-6 rounded-lg lg:rounded-xl bg-white overflow-y-auto">
+    <div className="relative w-full max-w-[90%] md:max-w-[70%] lg:max-w-[35%] lg:h-[90%] h-auto px-2 lg:px-6 pt-2 lg:pt-4 pb-3 lg:pb-6 rounded-lg lg:rounded-xl bg-white overflow-y-auto">
       {/* Close Button */}
       <button
         onClick={() => showModal(false)}

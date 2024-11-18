@@ -102,7 +102,7 @@ const Navbar = () => {
         {showLeftButton && (
           <button
             onClick={handlePrevious}
-            className="px-[10px] rounded-full bg-white border-2 py-1 mb-1 hover:border-heading"
+            className="px-[10px] ml-3 md:ml-8 lg:ml-0 rounded-full bg-white border-2 py-1 mb-1 hover:border-heading"
           >
             <FontAwesomeIcon icon={faChevronLeft} className="text-lg" />
           </button>
@@ -110,7 +110,7 @@ const Navbar = () => {
 
         <div
           ref={scrollRef}
-          className="flex w-[800px] overflow-hidden scrollbar-hide pb-2 mx-3"
+          className="flex w-[800px] overflow-hidden scrollbar-hide pb-2 mx-1 md:mx-6 lg:mx-3"
         >
           <div className="flex space-x-2 lg:space-x-5 py-3">
             {categoriesData.map((category) => (
@@ -136,7 +136,7 @@ const Navbar = () => {
         {showRightButton && (
           <button
             onClick={handleNext}
-            className="px-[10px] py-1 rounded-full bg-white border-2 mb-1 hover:border-heading"
+            className="px-[10px] mr-3 md:mr-8 lg:mr-0 py-1 rounded-full bg-white border-2 mb-1 hover:border-heading"
           >
             <FontAwesomeIcon icon={faChevronRight} className="text-lg" />
           </button>

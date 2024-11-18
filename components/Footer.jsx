@@ -4,10 +4,10 @@ import Socials from "./Socials";
 const Footer = () => {
   return (
     <footer className="relative z-20 bg-text lg:min-h-[300px] pt-8 lg:pt-10">
-      <div className="lg:container mx-auto px-3 lg:px-32">
+      <div className="lg:container mx-auto px-3 md:px-8 lg:px-32">
         <div className="h-full flex flex-col">
           {/* info */}
-          <div className="flex flex-col lg:flex-row justify-between gap-y-6 lg:gap-y-0 mb-6 lg:mb-12">
+          <div className="flex flex-col md:flex-row justify-between gap-x-64 gap-y-6 lg:gap-y-0 mb-6 lg:mb-12">
             {/* contact */}
             <div className="flex-1 lg:max-w-[300px]">
               <div

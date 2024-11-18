@@ -1,6 +1,6 @@
 const AddressInfo = () => {
   return (
-    <div className="bg-white/80 bg-opacity-90 border border-gray-200 px-10 lg:px-20 py-10 pt-10 rounded shadow-xl">
+    <div className="bg-white/80 bg-opacity-90 border border-gray-200 px-10 md:px-20 py-10 pt-10 rounded shadow-xl">
       <div className="space-y-4">
         <div>
           <h4 className="text-lg font-semibold">Restaurant Indian Palace</h4>

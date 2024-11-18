@@ -13,16 +13,16 @@ const CategoryData = ({ category, setActiveCategory }) => {
 
   return (
     <div
-      className="px-[12px] lg:container lg:px-[100px]"
+      className="px-[0px] lg:container lg:px-[100px]"
       onMouseLeave={() => setActiveCategory(null)}
     >
       <h3 className="flex justify-center uppercase tracking-widest font-secondary italic text-xl lg:text-2xl text-nav font-semibold lg:font-extrabold lg:pb-6">
         {category}
       </h3>
 
-      <div className="flex md:grid md:grid-cols-4 gap-2 lg:gap-4 overflow-x-auto scrollbar-hide">
+      <div className="flex lg:grid lg:grid-cols-4 gap-0 lg:gap-4 overflow-x-auto scrollbar-hide">
         {menuItems.map((item, index) => (
-          <div key={index} className="min-w-[300px] p-4 flex flex-col items-center">
+          <div key={index} className="min-w-[300px] p-2 lg:p-4 flex flex-col items-center">
             <Image
               src={item.image}
               alt={item.name}
