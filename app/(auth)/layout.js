@@ -1,7 +1,6 @@
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "../globals.css";
 import Header from "@/components/admin/Header";
-import Sidebar from "@/components/admin/Sidebar";
 
 export const metadata = {
   title: "Indian Palace",
@@ -13,10 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Header />
-        <div className="flex h-full">
-          <Sidebar />
-          <main className="flex-1 bg-slate-100 p-4">{children}</main>
-        </div>
+        {children}
       </body>
     </html>
   );
