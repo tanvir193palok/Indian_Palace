@@ -125,3 +125,34 @@ export const socialData = [
   { href: "/", icon: faTwitter, color: "#1DA1F2" },
   { href: "/", icon: faWhatsapp, color: "#25D366" },
 ];
+
+export const FoodData = [
+  {
+    name: "Murg Briyani",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus scelerisque viverra at id aenean scelerisque.",
+    price: "6,50 €",
+    imageSrc: "/menu/food3.jpg",
+  },
+  {
+    name: "Murg Briyani",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus scelerisque viverra at id aenean scelerisque.",
+    price: "6,50 €",
+    imageSrc: "/menu/food3.jpg",
+  },
+  {
+    name: "Murg Briyani",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus scelerisque viverra at id aenean scelerisque.",
+    price: "6,50 €",
+    imageSrc: "/menu/food3.jpg",
+  },
+  {
+    name: "Murg Briyani",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus scelerisque viverra at id aenean scelerisque.",
+    price: "6,50 €",
+    imageSrc: "/menu/food3.jpg",
+  },
+];
