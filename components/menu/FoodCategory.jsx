@@ -4,12 +4,12 @@ import { useState } from "react";
 import FoodCard from "./FoodCard";
 import FoodModal from "./FoodModal";
 
-const FoodCategory = ({ category }) => {
+const FoodCategory = ({ category, foodItems }) => {
   const [showModal, setShowModal] = useState(false);
   const [modalInfo, setModalInfo] = useState(null);
 
   //Dummy data
-  const foodData = {
+  const foodData = foodItems ? foodItems : {
     name: "Murg Briyani",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus scelerisque viverra at id aenean scelerisque.",
@@ -17,7 +17,6 @@ const FoodCategory = ({ category }) => {
     imageSrc: "/menu/food3.jpg",
   };
 
-  //Add method to fetch data based on category
 
   return (
     <div className="col-span-9 pb-10 lg:pb-20">

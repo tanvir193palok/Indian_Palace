@@ -1,8 +1,11 @@
 "use client";
 
-const ClickActions = () => {
+const ClickActions = ({ setModalInfo, food, showModal }) => {
   const handleEdit = () => {
     console.log(`Edit clicked for category: ${name}`);
+    showModal(true);
+    setModalInfo(food);
+    
     // Implement your edit logic here
   };
 
@@ -10,7 +13,7 @@ const ClickActions = () => {
     console.log(`Delete clicked for category: ${name}`);
     // Implement your delete logic here
   };
-  
+
   return (
     <div className="space-x-2">
       <button
