@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ClickActions from "./ClickActions";
+import ClickActions from "../ClickActions";
 
 const FoodItem = ({ food, isLast, setModalInfo, showModal }) => {
   const { name, description, price, imageSrc } = food;
@@ -29,7 +29,11 @@ const FoodItem = ({ food, isLast, setModalInfo, showModal }) => {
       </div>
 
       {/* Edit and Delete Buttons */}
-      <ClickActions setModalInfo={setModalInfo} food={food} showModal={showModal} />
+      <ClickActions
+        setModalInfo={setModalInfo}
+        content={food}
+        showModal={showModal}
+      />
     </div>
   );
 };

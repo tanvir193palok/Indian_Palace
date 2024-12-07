@@ -1,5 +1,4 @@
-
-import FoodItems from "@/components/admin/FoodItems";
+import FoodItems from "@/components/admin/foods/FoodItems";
 import { FoodData } from "@/data";
 
 const MainMenuFoods = ({ params: { category } }) => {

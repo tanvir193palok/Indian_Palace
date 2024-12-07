@@ -15,8 +15,29 @@ const FoodModal = ({ modalInfo, closeModal }) => {
     modalInfo ? modalInfo.imageSrc : "/noImage.jpg"
   );
 
+  const [errors, setErrors] = useState({});
+
   const handleSave = () => {
-    //apply logic to save the data on backend based on isEditing value if true means edit else means add new item
+    const newErrors = {};
+
+    if (!name) newErrors.name = "Name is required.";
+    if (!description) newErrors.description = "Description is required.";
+    if (!price) newErrors.price = "Price is required.";
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
+
+    setErrors({}); 
+
+    // Apply logic to save the data on the backend
+    console.log({
+      name,
+      description,
+      price,
+      imageSrc,
+    });
 
     closeModal();
   };
@@ -51,7 +72,7 @@ const FoodModal = ({ modalInfo, closeModal }) => {
         <div className="flex-shrink-0">
           <Image
             src={imageSrc}
-            alt={name}
+            alt="image"
             width={300}
             height={200}
             className="w-[300px] h-[300px] object-cover rounded-md mb-2"
@@ -66,7 +87,6 @@ const FoodModal = ({ modalInfo, closeModal }) => {
 
         {/* Right Side: Editable Text Fields */}
         <div className="flex-grow">
-          {/* Editable Name */}
           <div className="mb-4">
             <label className="block text-sm font-medium text-gray-700">
               Name
@@ -77,9 +97,11 @@ const FoodModal = ({ modalInfo, closeModal }) => {
               onChange={(e) => setName(e.target.value)}
               className="w-full border border-gray-300 rounded-md px-2 py-1"
             />
+            {errors.name && (
+              <p className="text-red-500 text-sm">{errors.name}</p>
+            )}
           </div>
 
-          {/* Editable Description */}
           <div className="mb-4">
             <label className="block text-sm font-medium text-gray-700">
               Description
@@ -90,9 +112,11 @@ const FoodModal = ({ modalInfo, closeModal }) => {
               className="w-full border border-gray-300 rounded-md px-2 py-1"
               rows="4"
             />
+            {errors.description && (
+              <p className="text-red-500 text-sm">{errors.description}</p>
+            )}
           </div>
 
-          {/* Editable Price */}
           <div className="mb-4">
             <label className="block text-sm font-medium text-gray-700">
               Price
@@ -103,6 +127,9 @@ const FoodModal = ({ modalInfo, closeModal }) => {
               onChange={(e) => setPrice(e.target.value)}
               className="w-full border border-gray-300 rounded-md px-2 py-1"
             />
+            {errors.price && (
+              <p className="text-red-500 text-sm">{errors.price}</p>
+            )}
           </div>
         </div>
       </div>

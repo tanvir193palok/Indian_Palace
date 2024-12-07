@@ -1,7 +1,7 @@
 import Link from "next/link";
-import ClickActions from "./ClickActions";
+import ClickActions from "../ClickActions";
 
-const Category = ({ name, isLast, link }) => {
+const Category = ({ name, isLast, link, setModalInfo, showModal }) => {
   return (
     <div
       className={`flex items-center justify-between pb-2 ${
@@ -14,8 +14,11 @@ const Category = ({ name, isLast, link }) => {
         Explore Foods
       </Link>
 
-      {/* Edit and delete button */}
-      <ClickActions />
+      <ClickActions
+        setModalInfo={setModalInfo}
+        content={{name: name}}
+        showModal={showModal}
+      />
     </div>
   );
 };

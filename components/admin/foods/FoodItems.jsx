@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import FoodItem from "./category/FoodItem";
-import FoodModal from "./category/FoodModal";
+import FoodItem from "./FoodItem";
+import FoodModal from "./FoodModal";
 
 const FoodItems = ({ items, category }) => {
   const [showModal, setShowModal] = useState(false);
@@ -19,7 +19,7 @@ const FoodItems = ({ items, category }) => {
 
   return (
     <div className="p-4">
-      <p className="flex justify-center pb-2 text-2xl font-semibold mb-6 text-nav border border-b-text">
+      <p className="flex justify-center pb-2 text-2xl font-semibold mb-6 text-nav">
         Appetizers in {decodeURIComponent(category)} Category
       </p>
 
@@ -51,10 +51,7 @@ const FoodItems = ({ items, category }) => {
           className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-70"
           onClick={closeModal}
         >
-          <FoodModal
-            modalInfo={modalInfo}
-            closeModal={closeModal}
-          />
+          <FoodModal modalInfo={modalInfo} closeModal={closeModal} />
         </div>
       )}
     </div>
