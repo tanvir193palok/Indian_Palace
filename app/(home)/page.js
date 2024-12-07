@@ -1,6 +1,7 @@
 import Banner from "@/components/home/Banner";
 import BestSelling from "@/components/home/BestSelling";
 import Menu from "@/components/home/Menu";
+import MidMenu from "@/components/home/MidMenu";
 import NewArrival from "@/components/home/NewArrival";
 import Overlay from "@/components/Overlay";
 
@@ -31,6 +32,7 @@ export default function Home() {
 
       <BestSelling />
       <Menu />
+      <MidMenu />
       <NewArrival />
     </div>
   );
