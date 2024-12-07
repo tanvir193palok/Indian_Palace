@@ -37,7 +37,7 @@ const Dropdown = () => {
       </Link>
 
       <Link
-        href="/menu?category=Midtime Menu"
+        href="/midtime_menu"
         onClick={(prev) => setDropdownMenu(!prev)}
         className="flex items-center px-1 lg:px-6 py-2 lg:py-3 hover:bg-gray-100 transition"
       >

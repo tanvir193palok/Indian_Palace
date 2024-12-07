@@ -32,7 +32,7 @@ const MidMenu = () => {
               condimentum etiam leo.
             </p>
             <Link
-              href="/menu?category=Midtime Menu"
+              href="/midtime_menu"
               className="h-[25px] text-heading font-primary font-semibold
               tracking-wide  hover:text-black hover:border-b-2 hover:border-heading uppercase"
             >
