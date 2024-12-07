@@ -45,12 +45,20 @@ const Dropdown = () => {
       </Link>
 
       <Link
-      href="/reservation"
-      onClick={(prev) => setDropdownMenu(!prev)}
-      className="flex items-center px-1 lg:px-6 py-2 lg:py-3 hover:bg-gray-100 transition"
-    >
-      <span className="lg:ml-6 text-gray-600">Reservations</span>
-    </Link>
+        href="/suggested_foods"
+        onClick={(prev) => setDropdownMenu(!prev)}
+        className="flex items-center px-1 lg:px-6 py-2 lg:py-3 hover:bg-gray-100 transition"
+      >
+        <span className="lg:ml-6 text-gray-600">Suggested Appetizers</span>
+      </Link>
+
+      <Link
+        href="/reservation"
+        onClick={(prev) => setDropdownMenu(!prev)}
+        className="flex items-center px-1 lg:px-6 py-2 lg:py-3 hover:bg-gray-100 transition"
+      >
+        <span className="lg:ml-6 text-gray-600">Reservations</span>
+      </Link>
 
       <Link
         href="/location"

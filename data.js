@@ -82,7 +82,7 @@ export const menuData = {
   title: "With Our Menu",
   description:
     "Enjoy the vibrant flavours of India with our authentic cuisine. From aromatic curries and spicy biryani to tart chutneys and crispy samosas, our menu offers a delicious journey through the diverse culinary traditions of the subcontinent. Each dish is prepared using the finest ingredients and traditional cooking techniques to ensure an unforgettable dining experience.",
-  btnText: "View Complete Menu",
+  btnText: "View our suggestion",
   menuItems: [
     {
       image: "/menu/food1.jpg",

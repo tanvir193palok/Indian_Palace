@@ -23,7 +23,7 @@ const MidMenu = () => {
             <h1 className="text-nav font-primary font-bold tracking-widest text-2xl uppercase pb-4">
               Menu Name
             </h1>
-            <p className="font-lato text-[14px] lg:text-[18px] mb-12 max-w-lg text-text">
+            <p className="font-lato text-[14px] lg:text-[18px] mb-8 max-w-lg text-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus
               <b> scelerisque viverra</b> at id aenean scelerisque. Nec eget
               condimentum etiam leo. Lorem ipsum dolor sit amet, consectetur
@@ -32,11 +32,11 @@ const MidMenu = () => {
               condimentum etiam leo.
             </p>
             <Link
-              href="#"
-              className="bg-text border border-text text-white px-8 py-4 font-primary font-medium 
-              rounded-md tracking-wide hover:bg-transparent hover:text-text hover:border-nav uppercase"
+              href="/menu?category=Midtime Menu"
+              className="h-[25px] text-heading font-primary font-semibold
+              tracking-wide  hover:text-black hover:border-b-2 hover:border-heading uppercase"
             >
-              Order Now
+              Explore Menu
             </Link>
           </div>
         </div>

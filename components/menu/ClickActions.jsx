@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const ClickActions = () => {
+const ClickActions = ({ isCombo }) => {
   const [quantity, setQuantity] = useState(1);
 
   // Fucntion for increment and decrement of quantity
@@ -20,12 +20,24 @@ const ClickActions = () => {
   };
 
   return (
-    <div className="w-full pb-3 flex flex-row justify-between items-center gap-3 lg:gap-6">
+    <div
+      className={`w-full pb-3 flex flex-row  gap-3 lg:gap-4 ${
+        isCombo
+          ? "gap-3 lg:gap-4 mt-2 lg:mt-6 flex flex-col"
+          : "gap-3 lg:gap-6 flex flex-row justify-between items-center"
+      }`}
+    >
       {/* Quantity Selector */}
-      <div className="flex  items-center border border-gray-300 rounded-md overflow-hidden">
+      <div
+        className={`${
+          isCombo ? "w-[180px]" : ""
+        } flex  items-center border border-gray-300 rounded-md overflow-hidden`}
+      >
         <button
           onClick={() => handleQuantityChange("decrement")}
-          className="px-4 py-2 bg-gray-200 text-lg font-bold hover:bg-gray-300"
+          className={`${
+            isCombo ? "px-6" : "px-4"
+          } py-2 bg-gray-200 text-lg font-bold hover:bg-gray-300`}
         >
           -
         </button>
@@ -33,11 +45,15 @@ const ClickActions = () => {
           type="number"
           value={quantity}
           readOnly
-          className="w-12 pl-2 text-center py-2 outline-none border-l border-r border-gray-300"
+          className={` ${
+            isCombo ? "w-16" : "w-12"
+          } pl-2 text-center py-2 outline-none border-l border-r border-gray-300`}
         />
         <button
           onClick={() => handleQuantityChange("increment")}
-          className="px-4 py-2 bg-gray-200 text-lg font-bold hover:bg-gray-300"
+          className={`${
+            isCombo ? "px-6" : "px-4"
+          } py-2 bg-gray-200 text-lg font-bold hover:bg-gray-300`}
         >
           +
         </button>
@@ -46,8 +62,10 @@ const ClickActions = () => {
       {/* Add to Cart Button */}
       <button
         onClick={handleCart}
-        className="bg-text border w-[60%] md:w-[70%] border-text text-white py-3 font-primary font-medium 
-              rounded-md tracking-wide hover:bg-transparent hover:text-text hover:border-nav uppercase"
+        className={`bg-text border ${
+          isCombo ? "w-full md:w-[55%]" : "w-[60%] md:w-[70%]"
+        } w-[60%] md:w-[70%] border-text text-white py-3 font-primary font-medium 
+              rounded-md tracking-wide hover:bg-transparent hover:text-text hover:border-nav uppercase`}
       >
         Add to Cart
       </button>
