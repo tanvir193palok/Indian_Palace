@@ -29,6 +29,14 @@ const Dropdown = () => {
       </Link>
 
       <Link
+        href="/midtime_menu"
+        onClick={(prev) => setDropdownMenu(!prev)}
+        className="flex items-center px-1 lg:px-6 py-2 lg:py-3 hover:bg-gray-100 transition"
+      >
+        <span className="lg:ml-6 text-gray-600">Midtime Menu</span>
+      </Link>
+
+      <Link
         href="/menu?category=New Arrival"
         onClick={(prev) => setDropdownMenu(!prev)}
         className="flex items-center px-1 lg:px-6 py-2 lg:py-3 hover:bg-gray-100 transition"
@@ -37,11 +45,11 @@ const Dropdown = () => {
       </Link>
 
       <Link
-        href="/midtime_menu"
+        href="/menu?category=Best Selling"
         onClick={(prev) => setDropdownMenu(!prev)}
         className="flex items-center px-1 lg:px-6 py-2 lg:py-3 hover:bg-gray-100 transition"
       >
-        <span className="lg:ml-6 text-gray-600">Midtime Menu</span>
+        <span className="lg:ml-6 text-gray-600">Best selling</span>
       </Link>
 
       <Link
