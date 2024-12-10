@@ -8,7 +8,7 @@ const Category = ({ name, isLast, link, setModalInfo, showModal }) => {
         isLast ? "" : "border-b-2"
       }`}
     >
-      <p className="text-lg w-[200px]">{name}</p>
+      <p className="text-lg font-semibold text-gray-800 w-[200px] tracking-wider">{name}</p>
 
       <Link href={link} className="w-40 text-lg text-nav hover:underline">
         Explore Foods

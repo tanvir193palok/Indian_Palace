@@ -11,6 +11,12 @@ const Sidebar = () => {
           Home
         </Link>
         <Link
+          href="/admin"
+          className="hover:bg-gray-800 p-2 rounded cursor-pointer"
+        >
+          reservation request
+        </Link>
+        <Link
           href="/admin/main_menu"
           className="hover:bg-gray-800 p-2 rounded cursor-pointer"
         >
