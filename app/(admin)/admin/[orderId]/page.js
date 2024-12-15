@@ -3,7 +3,7 @@ import OrderDetails from "@/components/admin/home/OrderDetails";
 import { orderDetails } from "@/data";
 
 const OrderDetailsPage = ({ searchParams: { orderId } }) => {
-  console.log(orderDetails[orderId]?.items);
+  const orderIdAsInt = parseInt(orderId, 10); 
   return (
     <div className="p-6">
       <h1 className="flex justify-center text-2xl font-semibold mb-8">
@@ -27,7 +27,7 @@ const OrderDetailsPage = ({ searchParams: { orderId } }) => {
           </tr>
         </thead>
 
-        <OrderDetails order={orderDetails[orderId]?.items} />
+        <OrderDetails order={orderDetails[orderIdAsInt]?.items} />
       </table>
 
       <div className="flex justify-end p-6">
