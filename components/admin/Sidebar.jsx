@@ -41,10 +41,13 @@ const Sidebar = () => {
           Users
         </Link>
         <Link
-          href="/admin/users?user=top users"
+          href={{
+            pathname: "/admin/users",
+            query: { topUsers: "true" },
+          }}
           className="hover:bg-gray-800 p-2 rounded cursor-pointer"
         >
-          top users
+          Top Users
         </Link>
       </div>
     </div>
