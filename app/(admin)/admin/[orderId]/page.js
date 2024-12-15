@@ -3,8 +3,8 @@ import OrderDetails from "@/components/admin/home/OrderDetails";
 import { orderDetails } from "@/data";
 
 const OrderDetailsPage = ({ searchParams: { orderId } }) => {
-  const orderIdAsInt = parseInt(orderId, 10); 
-  
+  const orderIdAsInt = parseInt(orderId, 10);
+
   return (
     <div className="p-6">
       <h1 className="flex justify-center text-2xl font-semibold mb-8">

@@ -166,6 +166,7 @@ export const orderDetails = [
     email: "johndoe@example.com",
     pickup: true,
     homeDelivery: true,
+    isReceived: false,
     items: [
       {
         id: 1,
@@ -195,6 +196,7 @@ export const orderDetails = [
     email: "janesmith@example.com",
     pickup: true,
     homeDelivery: false,
+    isReceived: false,
     items: [
       {
         id: 3,
@@ -224,6 +226,7 @@ export const orderDetails = [
     email: "janesmith@example.com",
     pickup: false,
     homeDelivery: true,
+    isReceived: false,
     items: [
       {
         id: 3,

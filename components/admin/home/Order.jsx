@@ -1,9 +1,7 @@
-
-
 import Link from "next/link";
 import OrderActions from "./OrderActions";
 
-const Order = ({ order }) => {
+const Order = ({ order, isNew }) => {
   return (
     <div className="bg-white flex justify-between shadow-md rounded-lg p-6 border border-gray-200">
       {/* User Info */}
@@ -33,7 +31,12 @@ const Order = ({ order }) => {
       </div>
 
       {/* Accept/Reject Buttons => On accepting or rejecting any request send email to users */}
-      <OrderActions pickup={order?.pickup} homeDelivery={order?.homeDelivery} />
+      {isNew && (
+        <OrderActions
+          pickup={order?.pickup}
+          homeDelivery={order?.homeDelivery}
+        />
+      )}
     </div>
   );
 };
