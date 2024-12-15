@@ -15,7 +15,7 @@ const MenuGallery = ({ menuItems, btnText }) => {
         </div>
         {/* Button */}
         <div className="flex justify-center">
-          <Link href="/suggested_foods">
+          <Link href="/suggested_appetizers">
             <button
               className="bg-text border border-text text-white px-8 py-4 font-primary font-medium 
               rounded-md tracking-wide hover:bg-transparent hover:text-text hover:border-nav uppercase"
