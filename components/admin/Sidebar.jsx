@@ -11,10 +11,10 @@ const Sidebar = () => {
           Home
         </Link>
         <Link
-          href="/admin"
+          href="/admin/reservation_request"
           className="hover:bg-gray-800 p-2 rounded cursor-pointer"
         >
-          reservation request
+          reservation requests
         </Link>
         <Link
           href="/admin/main_menu"

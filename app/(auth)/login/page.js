@@ -1,3 +1,6 @@
+import LoginForm from "@/components/auth/LoginForm";
+import Link from "next/link";
+
 const LoginPage = () => {
   return (
     <div
@@ -6,36 +9,15 @@ const LoginPage = () => {
     >
       <div className="bg-white bg-opacity-80 p-10 rounded-lg shadow-lg max-w-sm w-full">
         <h2 className="text-2xl font-bold text-center mb-6">Login</h2>
-        <form className="space-y-4">
-          <div>
-            <label htmlFor="username" className="block text-sm font-medium">
-              Username
-            </label>
-            <input
-              type="text"
-              id="username"
-              name="username"
-              className="mt-1 w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-nav"
-            />
-          </div>
-          <div>
-            <label htmlFor="password" className="block text-sm font-medium">
-              Password
-            </label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              className="mt-1 w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-nav"
-            />
-          </div>
-          <button
-            type="submit"
-            className="w-full font-primary tracking-wide font-medium uppercase py-3 px-4 bg-nav text-white rounded-lg hover:bg-text focus:outline-none"
-          >
-            Login
-          </button>
-        </form>
+        {/* Login form */}
+        <LoginForm />
+
+        <p className="mt-2 lg:mt-4 text-center text-sm lg:text-base text-gray-600">
+          Don&apos;t have account?{" "}
+          <Link href="/register" className="text-primary">
+            Register now
+          </Link>
+        </p>
       </div>
     </div>
   );
