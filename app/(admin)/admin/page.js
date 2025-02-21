@@ -1,3 +1,4 @@
+import MonthlySalesReport from "@/components/admin/charts/MonthlySalesReport";
 import OrderList from "@/components/admin/home/OrderList";
 import SaleDetails from "@/components/admin/home/SaleDetails";
 import { orderDetails } from "@/data";
@@ -7,6 +8,7 @@ const AdminPage = () => {
   return (
     <div>
       <SaleDetails />
+      <MonthlySalesReport />
       <OrderList orderData={orderDetails} isNew={true} />
       <OrderList orderData={orderDetails} isNew={false} />
     </div>

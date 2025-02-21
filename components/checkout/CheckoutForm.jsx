@@ -2,19 +2,28 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { LoadScript } from "@react-google-maps/api";
+import GooglePlacesAutocomplete from "react-google-places-autocomplete";
 
 const CheckoutForm = () => {
+  const [value, setValue] = useState(null);
   const [error, setError] = useState("");
 
   //Form submit logic
-  const onSubmit = async(e) => {
+  const onSubmit = async (e) => {
     e.preventDeafult();
+  };
 
-  }
+  //getting longitude and latitude of selected place
+  const getLatAndLong = (place, type) => {
+    console.log(place, type);
+  };
 
   return (
     <div className="col-span-5 border border-gray-200 p-4 rounded font-lato">
-      <h3 className="text-lg font-medium font-primary uppercase mb-4 tracking-widest">Checkout</h3>
+      <h3 className="text-lg font-medium font-primary uppercase mb-4 tracking-widest">
+        Checkout
+      </h3>
       <div className="space-y-4">
         {error && <p className="text-red-500">{error}</p>}
         <form onSubmit={onSubmit}>
@@ -44,35 +53,35 @@ const CheckoutForm = () => {
               />
             </div>
           </div>
-          <div>
-            <label htmlFor="region" className="text-text">
-              Country/Region
-            </label>
-            <input
-              type="text"
-              name="region"
-              id="region"
-              className="input-box"
-            />
-          </div>
-          <div>
-            <label htmlFor="address" className="text-text">
-              Street address
-            </label>
-            <input
+          <LoadScript
+            googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_API_KEY}
+            libraries={["places"]}
+          >
+            <div>
+              <label htmlFor="address" className="text-text">
+                Address
+              </label>
+              {/*     <input
               type="text"
               name="address"
-              id="address"
+              id="region"
               className="input-box"
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="city" className="text-text">
-              City
-            </label>
-            <input type="text" name="city" id="city" className="input-box" />
-          </div>
+            />*/}
+
+              <GooglePlacesAutocomplete
+                apiKey={process.env.NEXT_PUBLIC_GOOGLE_API_KEY}
+                selectProps={{
+                  value,
+                  onChange: (place) => {
+                    getLatAndLong(place, type);
+                    setValue(place);
+                  },
+                  isClearable: true,
+                  placeholder: "Search for an address...",
+                }}
+              />
+            </div>
+          </LoadScript>
           <div>
             <label htmlFor="phone" className="text-text">
               Phone number
